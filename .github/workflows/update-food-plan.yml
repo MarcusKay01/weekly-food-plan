@@ -1,0 +1,168 @@
+name: Update Weekly Food Plan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-plan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install google-api-python-client google-auth jsonschema
+
+      - name: Download newest plan from Google Drive
+        env:
+          GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+          GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+        run: |
+          python - <<'PY'
+          import io
+          import json
+          import os
+
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaIoBaseDownload
+
+          credentials_info = json.loads(
+              os.environ["GOOGLE_SERVICE_ACCOUNT"]
+          )
+
+          credentials = service_account.Credentials.from_service_account_info(
+              credentials_info,
+              scopes=["https://www.googleapis.com/auth/drive.readonly"]
+          )
+
+          drive = build("drive", "v3", credentials=credentials)
+
+          folder_id = os.environ["GOOGLE_DRIVE_FOLDER_ID"]
+
+          query = (
+              f"'{folder_id}' in parents "
+              "and trashed = false "
+              "and name contains '.json'"
+          )
+
+          result = drive.files().list(
+              q=query,
+              spaces="drive",
+              fields="files(id,name,modifiedTime)",
+              orderBy="modifiedTime desc",
+              pageSize=100
+          ).execute()
+
+          files = result.get("files", [])
+
+          files = [
+              f for f in files
+              if f["name"].lower().endswith(".json")
+          ]
+
+          if not files:
+              raise RuntimeError(
+                  "No JSON plan files found in Published Plans."
+              )
+
+          newest = files[0]
+
+          print(
+              f"Using newest plan: {newest['name']} "
+              f"({newest['modifiedTime']})"
+          )
+
+          request = drive.files().get_media(
+              fileId=newest["id"]
+          )
+
+          os.makedirs("data", exist_ok=True)
+
+          with io.FileIO("data/current-week.json", "wb") as output:
+              downloader = MediaIoBaseDownload(output, request)
+
+              done = False
+              while not done:
+                  status, done = downloader.next_chunk()
+
+          print("Downloaded to data/current-week.json")
+          PY
+
+      - name: Validate weekly plan
+        run: |
+          python - <<'PY'
+          import json
+          from jsonschema import Draft202012Validator
+
+          with open(
+              "schema/weekly-food-plan.schema.json",
+              encoding="utf-8"
+          ) as f:
+              schema = json.load(f)
+
+          with open(
+              "data/current-week.json",
+              encoding="utf-8"
+          ) as f:
+              plan = json.load(f)
+
+          validator = Draft202012Validator(schema)
+
+          errors = sorted(
+              validator.iter_errors(plan),
+              key=lambda e: list(e.path)
+          )
+
+          if errors:
+              print("PLAN VALIDATION FAILED")
+
+              for error in errors:
+                  location = ".".join(
+                      str(x) for x in error.path
+                  )
+
+                  print(
+                      f"- {location or 'root'}: "
+                      f"{error.message}"
+                  )
+
+              raise SystemExit(1)
+
+          print("Weekly plan JSON is valid.")
+          PY
+
+      - name: Check whether plan changed
+        id: changes
+        run: |
+          if git diff --quiet -- data/current-week.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Website already has the newest plan."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "New weekly plan detected."
+          fi
+
+      - name: Publish new plan
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Weekly Food Plan Bot"
+          git config user.email "weekly-food-plan-bot@users.noreply.github.com"
+
+          git add data/current-week.json
+
+          git commit -m "Update current weekly food plan"
+
+          git push
