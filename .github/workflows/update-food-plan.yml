@@ -3,7 +3,7 @@ name: Update Weekly Food Plan
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
