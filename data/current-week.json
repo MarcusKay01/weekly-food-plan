@@ -1,0 +1,1282 @@
+{
+  "schemaVersion": "2.0.0",
+  "planId": "2026-09-01_7day",
+  "status": "confirmed",
+  "period": {
+    "label": "7-day food plan",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-07",
+    "timezone": "Europe/London"
+  },
+  "household": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "type": "adult"
+    },
+    {
+      "id": "bron",
+      "name": "Bron",
+      "type": "adult"
+    },
+    {
+      "id": "barney",
+      "name": "Barney",
+      "type": "child"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-01",
+      "dayName": "Tuesday",
+      "mealIds": [
+        "tue-lunch-pittas",
+        "tue-dinner-greek-chicken"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "dayName": "Wednesday",
+      "mealIds": [
+        "wed-lunch-greek-chicken",
+        "wed-dinner-tagine"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "dayName": "Thursday",
+      "mealIds": [
+        "thu-lunch-tagine",
+        "thu-dinner-harissa-chicken"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "dayName": "Friday",
+      "mealIds": [
+        "fri-lunch-harissa-chicken",
+        "fri-dinner-rigatoni"
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "dayName": "Saturday",
+      "mealIds": [
+        "sat-lunch-rigatoni",
+        "sat-dinner-cod-stew"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "dayName": "Sunday",
+      "mealIds": [
+        "sun-lunch-cod-stew",
+        "sun-dinner-koftas"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "dayName": "Monday",
+      "mealIds": []
+    }
+  ],
+  "meals": {
+    "tue-lunch-pittas": {
+      "id": "tue-lunch-pittas",
+      "date": "2026-09-01",
+      "title": "Hummus, feta & salad pittas",
+      "cuisine": "Mediterranean",
+      "mealMode": "standalone",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch",
+          "Barney lunch"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Wholemeal pittas",
+          "quantity": 3,
+          "unit": "each"
+        },
+        {
+          "item": "Hummus",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Feta",
+          "quantity": 75,
+          "unit": "g"
+        },
+        {
+          "item": "Cucumber",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Baby spinach",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": null,
+          "unit": "to finish"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to finish"
+        }
+      ],
+      "method": [
+        "Warm the pittas and fill with hummus, feta, cucumber, tomato and spinach.",
+        "Finish the adult portions with lemon, black pepper and a little olive oil.",
+        "For Barney, serve the components separately if easier and cut appropriately."
+      ],
+      "barneyNote": "Serve components separately if easier and cut appropriately.",
+      "slotLabel": "Lunch"
+    },
+    "tue-dinner-greek-chicken": {
+      "id": "tue-dinner-greek-chicken",
+      "date": "2026-09-01",
+      "title": "Greek lemon-oregano chicken traybake",
+      "cuisine": "Greek",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Tuesday dinner",
+          "Barney Tuesday dinner",
+          "2 adult Wednesday lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Boneless skinless chicken thighs",
+          "quantity": 750,
+          "unit": "g"
+        },
+        {
+          "item": "Baby/new potatoes",
+          "quantity": 900,
+          "unit": "g"
+        },
+        {
+          "item": "Red peppers",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Courgette",
+          "quantity": 1,
+          "unit": "each",
+          "stockSource": "opening_stock"
+        },
+        {
+          "item": "Red onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 4,
+          "unit": "cloves"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Dried oregano",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Smoked paprika",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 2.5,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Feta",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Greek yoghurt",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Heat oven to 210°C fan. Halve the potatoes, toss with 1½ tbsp olive oil, oregano, paprika, salt and pepper and roast for 15 minutes.",
+        "Add chicken, peppers, courgette, onion and garlic. Add remaining oil, lemon zest and most of the juice. Season thoroughly and roast for another 25–30 minutes until the chicken is browned and the potatoes are crisp.",
+        "Mash feta with yoghurt, remaining lemon juice and black pepper.",
+        "Before serving, box two complete adult portions for Wednesday lunch and chill once cooled."
+      ],
+      "flavourNote": "Season the potatoes and chicken assertively; finish the whipped feta with enough lemon and black pepper to keep it bright.",
+      "slotLabel": "Dinner",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-02",
+        "label": "2 adult portions for the next day's lunch",
+        "instructions": "Before serving, reserve and box 2 complete adult portions for the following day."
+      }
+    },
+    "wed-lunch-greek-chicken": {
+      "id": "wed-lunch-greek-chicken",
+      "date": "2026-09-02",
+      "title": "Greek chicken, potatoes & vegetables",
+      "cuisine": "Greek",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "tue-dinner-greek-chicken",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat the reserved chicken, potatoes and vegetables thoroughly, or eat cold if preferred. Serve with reserved whipped feta."
+      ],
+      "storageNote": "Reserved deliberately from Tuesday dinner and chilled once cooled.",
+      "slotLabel": "Lunch",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "tue-dinner-greek-chicken",
+        "label": "Prepared from Greek lemon-oregano chicken traybake"
+      }
+    },
+    "wed-dinner-tagine": {
+      "id": "wed-dinner-tagine",
+      "date": "2026-09-02",
+      "title": "Moroccan beef & apricot tagine",
+      "cuisine": "Moroccan",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Wednesday dinner",
+          "Barney Wednesday dinner",
+          "2 adult Thursday work lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Diced stewing beef",
+          "quantity": 750,
+          "unit": "g"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 1,
+          "unit": "large"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Carrots",
+          "quantity": 3,
+          "unit": "each"
+        },
+        {
+          "item": "Red pepper",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Chickpeas",
+          "quantity": 1,
+          "unit": "400 g tin"
+        },
+        {
+          "item": "Chopped tomatoes",
+          "quantity": 1,
+          "unit": "400 g tin"
+        },
+        {
+          "item": "Dried apricots",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "item": "Tomato puree",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Ground cumin",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Ground coriander",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Smoked paprika",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Ground cinnamon",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Turmeric",
+          "quantity": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Beef stock",
+          "quantity": 500,
+          "unit": "ml"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Couscous",
+          "quantity": 350,
+          "unit": "g"
+        },
+        {
+          "item": "Fresh coriander",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Season and brown the beef well in batches. Remove it, then soften diced onion, carrots and pepper for about 6 minutes.",
+        "Add garlic and spices and cook for 1 minute.",
+        "Add tomato puree, return the beef, then add tomatoes, chopped apricots, drained chickpeas and stock.",
+        "Cover and simmer gently for 1½–2 hours until tender. Uncover near the end if the sauce needs reducing.",
+        "Finish with lemon juice, coriander and seasoning. Prepare couscous and fluff well.",
+        "Reserve two full adult portions of tagine and couscous for Thursday work lunches."
+      ],
+      "flavourNote": "Brown the beef deeply before braising; the finish should balance warm spice and apricot sweetness with fresh lemon and coriander.",
+      "slotLabel": "Dinner",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-03",
+        "label": "2 adult portions for the next day's lunch",
+        "instructions": "Before serving, reserve and box 2 complete adult portions for the following day."
+      }
+    },
+    "thu-lunch-tagine": {
+      "id": "thu-lunch-tagine",
+      "date": "2026-09-03",
+      "title": "Moroccan beef tagine & couscous",
+      "cuisine": "Moroccan",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "wed-dinner-tagine",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus work lunch",
+          "Bron work lunch"
+        ]
+      },
+      "method": [
+        "Reheat until piping hot. The tagine should develop even more flavour overnight."
+      ],
+      "storageNote": "Two complete adult portions reserved from Wednesday dinner.",
+      "slotLabel": "Lunch",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "wed-dinner-tagine",
+        "label": "Prepared from Moroccan beef & apricot tagine"
+      }
+    },
+    "thu-dinner-harissa-chicken": {
+      "id": "thu-dinner-harissa-chicken",
+      "date": "2026-09-03",
+      "title": "Harissa chicken, pepper & chickpea couscous bowls",
+      "cuisine": "North African",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 0,
+        "allocation": [
+          "2 adult Thursday dinner",
+          "2 adult Friday work lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Chicken breast",
+          "quantity": 600,
+          "unit": "g"
+        },
+        {
+          "item": "Chickpeas",
+          "quantity": 1,
+          "unit": "400 g tin"
+        },
+        {
+          "item": "Red peppers",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Red onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Harissa paste",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Couscous",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "item": "Baby spinach",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "item": "Tahini",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "item": "Fresh coriander",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Slice chicken and coat with harissa, cumin, olive oil and seasoning.",
+        "Fry with sliced peppers and onion in a large hot pan for 8–10 minutes, allowing some colour to develop. Add drained chickpeas for the final 3–4 minutes.",
+        "Prepare couscous and fold through spinach and coriander.",
+        "Mix tahini, garlic, lemon juice and a pinch of salt, adding cold water gradually until creamy and pourable.",
+        "Divide equally into four adult portions. Eat two and box two for Friday. Keep the lunch dressing separately if practical."
+      ],
+      "flavourNote": "Let the chicken and peppers catch some colour; keep the tahini dressing lemony and loose enough to pour.",
+      "barneyNote": "Barney eats dinner at nursery.",
+      "slotLabel": "Dinner",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-04",
+        "label": "2 adult portions for the next day's lunch",
+        "instructions": "Before serving, reserve and box 2 complete adult portions for the following day."
+      }
+    },
+    "fri-lunch-harissa-chicken": {
+      "id": "fri-lunch-harissa-chicken",
+      "date": "2026-09-04",
+      "title": "Harissa chicken couscous bowls",
+      "cuisine": "North African",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "thu-dinner-harissa-chicken",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus work lunch",
+          "Bron work lunch"
+        ]
+      },
+      "method": [
+        "Eat cold or reheat until piping hot. Add the tahini dressing after reheating."
+      ],
+      "storageNote": "Two adult portions boxed Thursday; dressing kept separately if practical.",
+      "slotLabel": "Lunch",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "thu-dinner-harissa-chicken",
+        "label": "Prepared from Harissa chicken, pepper & chickpea couscous bowls"
+      }
+    },
+    "fri-dinner-rigatoni": {
+      "id": "fri-dinner-rigatoni",
+      "date": "2026-09-04",
+      "title": "Italian sausage, tomato & mascarpone rigatoni",
+      "cuisine": "Italian",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Friday dinner",
+          "Barney Friday dinner",
+          "2 adult Saturday lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Italian-style pork sausages",
+          "quantity": 600,
+          "unit": "g"
+        },
+        {
+          "item": "Rigatoni",
+          "quantity": 450,
+          "unit": "g"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Chopped tomatoes",
+          "quantity": 2,
+          "unit": "400 g tins"
+        },
+        {
+          "item": "Tomato puree",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Mascarpone",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "item": "Baby spinach",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Parmesan",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "item": "Dried oregano",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Chilli flakes",
+          "quantity": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 1,
+          "unit": "tsp if needed"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Remove sausage meat from the skins and fry until deeply browned.",
+        "Add finely chopped onion and cook for about 5 minutes, then add garlic, oregano, chilli and tomato puree for another minute.",
+        "Add tomatoes and simmer uncovered for 15 minutes. Cook rigatoni until just al dente, reserving pasta water.",
+        "Stir mascarpone and spinach into the sauce, add pasta and enough pasta water for a glossy consistency.",
+        "Finish with Parmesan and black pepper. Take Barney's portion before extra chilli or seasoning if needed.",
+        "Reserve two adult portions for Saturday lunch."
+      ],
+      "flavourNote": "Deep browning on the sausage is important. Loosen with pasta water so the mascarpone sauce stays glossy rather than heavy.",
+      "barneyNote": "Take Barney's portion before adding extra chilli or final seasoning if needed.",
+      "slotLabel": "Dinner",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-05",
+        "label": "2 adult portions for the next day's lunch",
+        "instructions": "Before serving, reserve and box 2 complete adult portions for the following day."
+      }
+    },
+    "sat-lunch-rigatoni": {
+      "id": "sat-lunch-rigatoni",
+      "date": "2026-09-05",
+      "title": "Sausage & mascarpone rigatoni",
+      "cuisine": "Italian",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "fri-dinner-rigatoni",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat gently until piping hot. Add a splash of water before reheating to loosen the sauce."
+      ],
+      "storageNote": "Two adult portions deliberately reserved Friday.",
+      "slotLabel": "Lunch",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "fri-dinner-rigatoni",
+        "label": "Prepared from Italian sausage, tomato & mascarpone rigatoni"
+      }
+    },
+    "sat-dinner-cod-stew": {
+      "id": "sat-dinner-cod-stew",
+      "date": "2026-09-05",
+      "title": "Spanish cod, chorizo & butterbean stew",
+      "cuisine": "Spanish",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Saturday dinner",
+          "Barney Saturday dinner",
+          "2 adult Sunday lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Cod loin/fillets",
+          "quantity": 750,
+          "unit": "g"
+        },
+        {
+          "item": "Cooking chorizo",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Butter beans",
+          "quantity": 2,
+          "unit": "400 g tins"
+        },
+        {
+          "item": "Chopped tomatoes",
+          "quantity": 2,
+          "unit": "400 g tins"
+        },
+        {
+          "item": "Red peppers",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 1,
+          "unit": "large"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 4,
+          "unit": "cloves"
+        },
+        {
+          "item": "Smoked paprika",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Chicken stock",
+          "quantity": 300,
+          "unit": "ml"
+        },
+        {
+          "item": "Flat-leaf parsley",
+          "quantity": 1,
+          "unit": "bunch"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Crusty bread",
+          "quantity": 1,
+          "unit": "large loaf"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Fry diced chorizo until browned and its oil renders. Add onion and peppers and cook for 6–8 minutes.",
+        "Add garlic, paprika and cumin for another minute.",
+        "Add tomatoes, stock and drained butter beans. Simmer uncovered for about 15 minutes until rich and slightly reduced.",
+        "Before adding cod, remove two adult portions of the tomato, chorizo and butterbean stew for Sunday.",
+        "Add about 450 g cod to Saturday's stew, cover and cook gently for 6–8 minutes until flaky. Finish with parsley and lemon.",
+        "Keep the remaining approximately 300 g raw cod refrigerated for Sunday."
+      ],
+      "flavourNote": "Render the chorizo properly and cook the vegetables in its oil; finish with parsley and lemon to cut through the richness.",
+      "slotLabel": "Dinner",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-06",
+        "label": "2 adult portions for the next day's lunch",
+        "instructions": "Reserve the Sunday stew base before adding fish; keep ~300 g raw cod for Sunday."
+      }
+    },
+    "sun-lunch-cod-stew": {
+      "id": "sun-lunch-cod-stew",
+      "date": "2026-09-06",
+      "title": "Spanish cod, chorizo & butterbean stew",
+      "cuisine": "Spanish",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "sat-dinner-cod-stew",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Heat the reserved stew until simmering. Nestle in the reserved approximately 300 g raw cod, cover and cook for around 6–8 minutes until opaque and flaky. Serve with remaining crusty bread."
+      ],
+      "storageNote": "Keep Sunday's raw cod refrigerated at 5°C or below; freeze promptly on Saturday if the use-by date does not cover Sunday, then defrost in the fridge overnight.",
+      "slotLabel": "Lunch",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "sat-dinner-cod-stew",
+        "label": "Prepared from Spanish cod, chorizo & butterbean stew"
+      }
+    },
+    "sun-dinner-koftas": {
+      "id": "sun-dinner-koftas",
+      "date": "2026-09-06",
+      "title": "Turkish beef koftas, flatbreads & chopped salad",
+      "cuisine": "Turkish",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Sunday dinner",
+          "Barney Sunday dinner"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Beef mince",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "item": "Ground cumin",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Ground coriander",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Smoked paprika",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Ground cinnamon",
+          "quantity": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "Flat-leaf parsley",
+          "quantity": 0.5,
+          "unit": "bunch"
+        },
+        {
+          "item": "Flatbreads",
+          "quantity": 4,
+          "unit": "each"
+        },
+        {
+          "item": "Cucumber",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Cherry tomatoes",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "item": "Red onion",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Greek yoghurt",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 1,
+          "unit": "small clove"
+        },
+        {
+          "item": "Feta",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": null,
+          "unit": "as needed"
+        },
+        {
+          "item": "Salt",
+          "quantity": null,
+          "unit": "to taste"
+        },
+        {
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Mix beef with finely grated onion, garlic, cumin, coriander, paprika, cinnamon, chopped parsley, salt and pepper.",
+        "Form into elongated koftas and cook in a very hot frying or griddle pan for 8–10 minutes, turning to develop a dark crust.",
+        "Mix yoghurt with grated garlic, lemon juice and seasoning.",
+        "Chop cucumber, tomatoes and red onion and dress with lemon, olive oil, salt and pepper.",
+        "Warm flatbreads and serve with koftas, salad, garlic yoghurt and crumbled feta.",
+        "For Barney, serve appropriately sized pieces and moderate seasoning."
+      ],
+      "flavourNote": "Cook the koftas hot enough to form a dark crust; keep the chopped salad sharp and fresh with lemon.",
+      "barneyNote": "Serve appropriately sized pieces and moderate seasoning.",
+      "slotLabel": "Dinner"
+    }
+  },
+  "openingStock": [
+    {
+      "item": "Courgette",
+      "quantity": 1,
+      "unit": "each",
+      "usedByMealId": "tue-dinner-greek-chicken"
+    }
+  ],
+  "intentionalRemainders": [
+    {
+      "item": "Feta",
+      "purchased": "400 g",
+      "plannedUse": "275 g",
+      "remainder": "~125 g",
+      "action": "Use for salads/snacks or freeze."
+    },
+    {
+      "item": "Greek yoghurt",
+      "purchased": "500 g",
+      "plannedUse": "300 g",
+      "remainder": "~200 g",
+      "action": "Use for breakfast/snacks."
+    },
+    {
+      "item": "Hummus",
+      "purchased": "1 small tub",
+      "plannedUse": "150 g",
+      "remainder": "Any small remainder",
+      "action": "Use for snacks."
+    },
+    {
+      "item": "Mascarpone",
+      "purchased": "250 g",
+      "plannedUse": "200 g",
+      "remainder": "~50 g",
+      "action": "Freeze for a future cooked sauce."
+    }
+  ],
+  "usefulNotes": [
+    "Keep Sunday's raw cod portion refrigerated at 5°C or below and use the following day. If the use-by date does not cover Sunday, freeze promptly and defrost in the fridge overnight Saturday.",
+    "The existing courgette is opening stock and is not repurchased.",
+    "Porridge oats, dark chocolate, coffee, whole milk, washing-up liquid and fabric softener are included in the confirmed shop."
+  ],
+  "shoppingList": [
+    {
+      "item": "Boneless chicken thighs",
+      "quantity": "750 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Chicken breast",
+      "quantity": "600 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Diced stewing beef",
+      "quantity": "750 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Italian-style pork sausages",
+      "quantity": "600 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Beef mince",
+      "quantity": "500 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Cod fillets/loin",
+      "quantity": "750 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Cooking chorizo",
+      "quantity": "150 g",
+      "category": "Meat & fish"
+    },
+    {
+      "item": "Baby/new potatoes",
+      "quantity": "900 g",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Red peppers",
+      "quantity": "7",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Carrots",
+      "quantity": "3",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Red onions",
+      "quantity": "3",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Brown onions",
+      "quantity": "3",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Garlic",
+      "quantity": "2 bulbs",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Lemons",
+      "quantity": "4",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Cucumber",
+      "quantity": "1",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Tomatoes",
+      "quantity": "2",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Cherry tomatoes",
+      "quantity": "250 g",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Baby spinach",
+      "quantity": "300 g",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Fresh coriander",
+      "quantity": "1 bunch",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Flat-leaf parsley",
+      "quantity": "1 bunch",
+      "category": "Fruit & veg"
+    },
+    {
+      "item": "Chickpeas",
+      "quantity": "2 x 400 g tins",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Butter beans",
+      "quantity": "2 x 400 g tins",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Chopped tomatoes",
+      "quantity": "5 x 400 g tins",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Dried apricots",
+      "quantity": "100 g",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Tomato puree",
+      "quantity": "1 tube",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Couscous",
+      "quantity": "650 g",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Rigatoni",
+      "quantity": "450 g",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Wholemeal pittas",
+      "quantity": "1 pack",
+      "category": "Bakery"
+    },
+    {
+      "item": "Flatbreads",
+      "quantity": "1 pack",
+      "category": "Bakery"
+    },
+    {
+      "item": "Crusty bread",
+      "quantity": "1 large loaf",
+      "category": "Bakery"
+    },
+    {
+      "item": "Hummus",
+      "quantity": "1 small tub",
+      "category": "Chilled"
+    },
+    {
+      "item": "Feta",
+      "quantity": "400 g",
+      "category": "Chilled"
+    },
+    {
+      "item": "Greek yoghurt",
+      "quantity": "500 g",
+      "category": "Chilled"
+    },
+    {
+      "item": "Mascarpone",
+      "quantity": "250 g",
+      "category": "Chilled"
+    },
+    {
+      "item": "Parmesan",
+      "quantity": "50 g",
+      "category": "Chilled"
+    },
+    {
+      "item": "Harissa paste",
+      "quantity": "1 jar",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Tahini",
+      "quantity": "1 jar",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Beef stock cubes",
+      "quantity": "1 pack, if needed",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Chicken stock cubes",
+      "quantity": "1 pack, if needed",
+      "category": "Cupboard"
+    },
+    {
+      "item": "Ground cumin",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Ground coriander",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Smoked paprika",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Ground cinnamon",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Turmeric",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Dried oregano",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Chilli flakes",
+      "quantity": "1 jar, if needed",
+      "category": "Herbs & spices"
+    },
+    {
+      "item": "Porridge oats",
+      "quantity": "1 pack",
+      "category": "Breakfast & household"
+    },
+    {
+      "item": "Dark chocolate",
+      "quantity": "1 pack",
+      "category": "Breakfast & household"
+    },
+    {
+      "item": "Coffee",
+      "quantity": "1 pack",
+      "category": "Breakfast & household"
+    },
+    {
+      "item": "Whole milk",
+      "quantity": "1 usual-size bottle",
+      "category": "Breakfast & household"
+    },
+    {
+      "item": "Washing-up liquid",
+      "quantity": "1",
+      "category": "Breakfast & household"
+    },
+    {
+      "item": "Fabric softener",
+      "quantity": "1",
+      "category": "Breakfast & household"
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-09-04T20:07:00+01:00",
+    "source": "Current confirmed Weekly Food Plan",
+    "notes": "v2 prototype: generic seven-day structure and meal-focused interface."
+  }
+}
