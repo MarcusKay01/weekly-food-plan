@@ -1,0 +1,20 @@
+{
+  "name": "Weekly Food Plan",
+  "short_name": "Food Plan",
+  "description": "Shared weekly meals, recipes and shopping for Marcus and Bron.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#f7f2e8",
+  "theme_color": "#17362f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
