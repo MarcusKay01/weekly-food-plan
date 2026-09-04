@@ -3,110 +3,37 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Weekly Food Plan</title>
+<meta name="description" content="Shared weekly meals, recipes and shopping for Marcus and Bron.">
+<meta name="theme-color" content="#17362f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Food Plan">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
 <style>
 :root{--ink:#18322c;--muted:#6a736e;--cream:#f7f2e8;--card:#fffdf8;--sage:#dfe9df;--terracotta:#d96f4a;--gold:#e8b85f;--line:#ded8cd;--shadow:0 12px 36px rgba(31,45,39,.12)}
-*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
-button,input{font:inherit}
-button{color:var(--ink);-webkit-appearance:none;appearance:none}
-a{color:var(--ink)}
-.meal-select,.back,.nav{color:var(--ink)}
- .app{max-width:640px;margin:auto;min-height:100vh;padding-bottom:94px}
-.hero{background:linear-gradient(145deg,#17362f,#285145);color:white;padding:25px 20px 23px;border-radius:0 0 28px 28px;box-shadow:var(--shadow)}
-.eyebrow{font-size:.73rem;letter-spacing:.12em;text-transform:uppercase;opacity:.74;font-weight:850} .hero h1{margin:6px 0 5px;font-size:1.62rem}
-.hero p{margin:0;opacity:.84;font-size:.9rem} main{padding:18px} .view{display:none} .view.active{display:block}
-.section-head{display:flex;align-items:end;justify-content:space-between;margin:3px 0 12px} .section-head h2{margin:0;font-size:1.15rem} .section-head span{font-size:.8rem;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 26px rgba(44,50,47,.07);overflow:hidden}
-.focus-card{padding:17px} .kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900;color:var(--muted)}
-.focus-title{font-size:1.35rem;font-weight:900;line-height:1.2;margin:6px 0} .meta{font-size:.82rem;color:var(--muted);line-height:1.45}
-.chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0} .chip{font-size:.72rem;background:var(--sage);padding:6px 9px;border-radius:999px;font-weight:800}
-.action{border:0;background:var(--ink);color:white;border-radius:13px;padding:10px 13px;font-weight:850}
-.lunch-box{margin-top:14px;padding:13px;border-radius:16px;background:#f3dfb1} .lunch-box b{display:block;margin-bottom:4px}
-.day{margin-bottom:12px} .day-head{display:flex;justify-content:space-between;align-items:center;padding:14px 15px 10px} .day-head h3{margin:0;font-size:1rem}
-.meal-select{width:100%;border:0;background:transparent;text-align:left;padding:12px 15px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:10px}
-.meal-select:first-of-type{border-top:0} .meal-select strong{display:block;font-size:.95rem} .meal-select small{color:var(--muted)} .arrow{align-self:center;font-size:1.2rem}
-.empty{padding:16px;color:var(--muted);font-size:.87rem;border-top:1px solid var(--line)}
-.recipe-section{margin-top:16px} .recipe-section h3{font-size:.92rem;margin:0 0 8px} .recipe-section ul,.recipe-section ol{padding-left:20px;margin:0;line-height:1.55;font-size:.9rem}
-.callout{background:var(--sage);padding:12px;border-radius:15px;font-size:.85rem;line-height:1.48;margin-top:12px}
-.back{border:0;background:var(--sage);border-radius:12px;padding:8px 10px;font-weight:850;margin-bottom:12px}
-.shop-item{display:grid;grid-template-columns:24px 1fr auto;gap:9px;align-items:center;padding:10px 15px;border-top:1px solid var(--line)} .shop-item:first-child{border-top:0}
-.shop-item input{width:20px;height:20px} .shop-item.checked .name{text-decoration:line-through;opacity:.5} .qty{font-size:.8rem;color:var(--muted)}
-.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,640px);display:grid;grid-template-columns:repeat(3,1fr);background:rgba(255,253,248,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
-.nav{border:0;background:transparent;padding:8px;border-radius:12px;color:var(--muted);font-weight:850;font-size:.75rem} .nav.active{background:var(--sage);color:var(--ink)} .nav span{display:block;font-size:1.15rem;margin-bottom:2px}
+*{box-sizing:border-box} html{background:#17362f} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
+button,input{font:inherit} button{color:var(--ink);-webkit-appearance:none;appearance:none} a{color:var(--ink)} .meal-select,.back,.nav{color:var(--ink)}
+.app{max-width:640px;margin:auto;min-height:100dvh;padding-bottom:94px;background:var(--cream)}
+.hero{background:linear-gradient(145deg,#17362f,#285145);color:white;padding:calc(25px + env(safe-area-inset-top)) 20px 23px;border-radius:0 0 28px 28px;box-shadow:var(--shadow)}
+.eyebrow{font-size:.73rem;letter-spacing:.12em;text-transform:uppercase;opacity:.74;font-weight:850}.hero h1{margin:6px 0 5px;font-size:1.62rem}.hero p{margin:0;opacity:.84;font-size:.9rem}main{padding:18px}.view{display:none}.view.active{display:block}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:3px 0 12px}.section-head h2{margin:0;font-size:1.15rem}.section-head span{font-size:.8rem;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 26px rgba(44,50,47,.07);overflow:hidden}.focus-card{padding:17px}.kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900;color:var(--muted)}.focus-title{font-size:1.35rem;font-weight:900;line-height:1.2;margin:6px 0}.meta{font-size:.82rem;color:var(--muted);line-height:1.45}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.chip{font-size:.72rem;background:var(--sage);padding:6px 9px;border-radius:999px;font-weight:800}.action{border:0;background:var(--ink);color:white;border-radius:13px;padding:10px 13px;font-weight:850}.lunch-box{margin-top:14px;padding:13px;border-radius:16px;background:#f3dfb1}.lunch-box b{display:block;margin-bottom:4px}.day{margin-bottom:12px}.day-head{display:flex;justify-content:space-between;align-items:center;padding:14px 15px 10px}.day-head h3{margin:0;font-size:1rem}.meal-select{width:100%;border:0;background:transparent;text-align:left;padding:12px 15px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:10px}.meal-select:first-of-type{border-top:0}.meal-select strong{display:block;font-size:.95rem}.meal-select small{color:var(--muted)}.arrow{align-self:center;font-size:1.2rem}.empty{padding:16px;color:var(--muted);font-size:.87rem;border-top:1px solid var(--line)}.recipe-section{margin-top:16px}.recipe-section h3{font-size:.92rem;margin:0 0 8px}.recipe-section ul,.recipe-section ol{padding-left:20px;margin:0;line-height:1.55;font-size:.9rem}.callout{background:var(--sage);padding:12px;border-radius:15px;font-size:.85rem;line-height:1.48;margin-top:12px}.back{border:0;background:var(--sage);border-radius:12px;padding:8px 10px;font-weight:850;margin-bottom:12px}.shop-item{display:grid;grid-template-columns:24px 1fr auto;gap:9px;align-items:center;padding:10px 15px;border-top:1px solid var(--line)}.shop-item:first-child{border-top:0}.shop-item input{width:20px;height:20px}.shop-item.checked .name{text-decoration:line-through;opacity:.5}.qty{font-size:.8rem;color:var(--muted)}
+.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,640px);display:grid;grid-template-columns:repeat(3,1fr);background:rgba(255,253,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}.nav{border:0;background:transparent;padding:8px;border-radius:12px;color:var(--muted);font-weight:850;font-size:.75rem}.nav.active{background:var(--sage);color:var(--ink)}.nav span{display:block;font-size:1.15rem;margin-bottom:2px}
 </style>
 </head>
 <body>
-<div class="app">
-<header class="hero"><div class="eyebrow">Shared family menu</div><h1>Weekly Food Plan</h1><p id="period"></p></header>
-<main>
-<section class="view active" id="week"><div class="section-head"><h2>7-day plan</h2><span>Tap any meal</span></div><div id="days"></div></section>
-<section class="view" id="meal"><button class="back" onclick="showView('week')">← Back to week</button><div id="meal-focus"></div></section>
-<section class="view" id="shop"><div class="section-head"><h2>Shopping</h2><span id="progress"></span></div><div class="card" id="shop-list"></div></section>
-</main>
-</div>
-<nav class="bottom-nav">
-<button class="nav active" data-view="week"><span>▦</span>Week</button>
-<button class="nav" data-view="meal"><span>◉</span>Meal</button>
-<button class="nav" data-view="shop"><span>✓</span>Shop</button>
-</nav>
+<div class="app"><header class="hero"><div class="eyebrow">Shared family menu</div><h1>Weekly Food Plan</h1><p id="period"></p></header><main><section class="view active" id="week"><div class="section-head"><h2>7-day plan</h2><span>Tap any meal</span></div><div id="days"></div></section><section class="view" id="meal"><button class="back" onclick="showView('week')">← Back to week</button><div id="meal-focus"></div></section><section class="view" id="shop"><div class="section-head"><h2>Shopping</h2><span id="progress"></span></div><div class="card" id="shop-list"></div></section></main></div>
+<nav class="bottom-nav"><button class="nav active" data-view="week"><span>▦</span>Week</button><button class="nav" data-view="meal"><span>◉</span>Meal</button><button class="nav" data-view="shop"><span>✓</span>Shop</button></nav>
 <script>
-let PLAN = null;
-let selectedMealId = null;
-
-async function loadPlan() {
-  try {
-    const response = await fetch('./data/current-week.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    PLAN = await response.json();
-    selectedMealId = PLAN.days.flatMap(d => d.mealIds)[0] || null;
-    renderWeek();
-    renderMeal();
-    renderShop();
-  } catch (error) {
-    document.getElementById('days').innerHTML =
-      '<div class="card" style="padding:16px"><strong>Unable to load this week’s plan.</strong><div class="meta" style="margin-top:6px">Check that data/current-week.json exists in the repository.</div></div>';
-    console.error('Weekly Food Plan load error:', error);
-  }
-}
-function showView(v){
-  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));
-  document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x.dataset.view===v));
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-function meal(id){return PLAN.meals[id]}
-function portions(m){
- const p=m.portions,b=[]; if(p.adultServings)b.push(p.adultServings+' adult'); if(p.childServings)b.push(p.childServings+' child'); return b.join(' + ');
-}
-function renderWeek(){
- document.getElementById('period').textContent=new Date(PLAN.period.startDate+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+new Date(PLAN.period.endDate+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
- document.getElementById('days').innerHTML=PLAN.days.map(d=>`<div class="card day"><div class="day-head"><h3>${d.dayName}</h3><span class="meta">${new Date(d.date+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</span></div>`+
- (d.mealIds.length?d.mealIds.map(id=>{const m=meal(id);return `<button class="meal-select" onclick="selectMeal('${id}')"><div><strong>${m.title}</strong><small>${m.slotLabel?m.slotLabel+' · ':''}${portions(m)}</small></div><div class="arrow">›</div></button>`}).join(''):`<div class="empty">No meal currently planned.</div>`)+`</div>`).join('');
-}
-function selectMeal(id){selectedMealId=id;renderMeal();showView('meal')}
-function renderMeal(){
- const box=document.getElementById('meal-focus');
- if(!selectedMealId||!meal(selectedMealId)){box.innerHTML='<div class="card focus-card">Select a meal from the week.</div>';return}
- const m=meal(selectedMealId);
- let h=`<div class="card focus-card"><div class="kicker">${m.slotLabel||'Meal'} · ${m.cuisine||''}</div><div class="focus-title">${m.title}</div><div class="meta">${new Date(m.date+'T12:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'})} · ${portions(m)}</div>`;
- h+=`<div class="chips">${(m.portions.allocation||[]).map(x=>`<span class="chip">${x}</span>`).join('')}</div>`;
- if(m.arrangeForLunch) h+=`<div class="lunch-box"><b>Arrange for lunch</b>${m.arrangeForLunch.label}<br><span class="meta">${m.arrangeForLunch.instructions}</span></div>`;
- if(m.arrangedFromPreviousMeal) h+=`<div class="callout"><b>Prepared in advance</b><br>${m.arrangedFromPreviousMeal.label}.</div>`;
- if(m.ingredients) h+=`<div class="recipe-section"><h3>Ingredients</h3><ul>${m.ingredients.map(i=>`<li>${i.item} — ${i.quantity===null?'':i.quantity+' '}${i.unit}</li>`).join('')}</ul></div>`;
- h+=`<div class="recipe-section"><h3>Method</h3><ol>${m.method.map(x=>`<li>${x}</li>`).join('')}</ol></div>`;
- if(m.flavourNote) h+=`<div class="callout"><b>Flavour</b><br>${m.flavourNote}</div>`;
- if(m.barneyNote) h+=`<div class="callout"><b>Barney</b><br>${m.barneyNote}</div>`;
- if(m.storageNote) h+=`<div class="callout"><b>Storage / reheating</b><br>${m.storageNote}</div>`;
- h+='</div>'; box.innerHTML=h;
-}
-function renderShop(){
- const target=document.getElementById('shop-list');
- target.innerHTML=PLAN.shoppingList.map((x,i)=>`<label class="shop-item"><input type="checkbox" data-i="${i}"><span class="name">${x.item}</span><span class="qty">${x.quantity}</span></label>`).join('');
- const saved=JSON.parse(localStorage.getItem('foodplan-shop-v2')||'[]');
- document.querySelectorAll('.shop-item input').forEach(cb=>{cb.checked=saved.includes(+cb.dataset.i);cb.closest('.shop-item').classList.toggle('checked',cb.checked);cb.onchange=saveShop});
- updateProgress();
-}
-function saveShop(){const a=[...document.querySelectorAll('.shop-item input:checked')].map(x=>+x.dataset.i);localStorage.setItem('foodplan-shop-v2',JSON.stringify(a));document.querySelectorAll('.shop-item input').forEach(cb=>cb.closest('.shop-item').classList.toggle('checked',cb.checked));updateProgress()}
-function updateProgress(){document.getElementById('progress').textContent=document.querySelectorAll('.shop-item input:checked').length+' / '+PLAN.shoppingList.length}
-document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{if(b.dataset.view==='meal')renderMeal();showView(b.dataset.view)})
-loadPlan();
+let PLAN=null;let selectedMealId=null;
+async function loadPlan(){try{const response=await fetch('./data/current-week.json',{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);PLAN=await response.json();selectedMealId=PLAN.days.flatMap(d=>d.mealIds)[0]||null;renderWeek();renderMeal();renderShop()}catch(error){document.getElementById('days').innerHTML='<div class="card" style="padding:16px"><strong>Unable to load this week’s plan.</strong><div class="meta" style="margin-top:6px">Check that data/current-week.json exists in the repository.</div></div>';console.error('Weekly Food Plan load error:',error)}}
+function showView(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x.dataset.view===v));window.scrollTo({top:0,behavior:'smooth'})}function meal(id){return PLAN.meals[id]}function portions(m){const p=m.portions,b=[];if(p.adultServings)b.push(p.adultServings+' adult');if(p.childServings)b.push(p.childServings+' child');return b.join(' + ')}
+function renderWeek(){document.getElementById('period').textContent=new Date(PLAN.period.startDate+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+new Date(PLAN.period.endDate+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});document.getElementById('days').innerHTML=PLAN.days.map(d=>`<div class="card day"><div class="day-head"><h3>${d.dayName}</h3><span class="meta">${new Date(d.date+'T12:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</span></div>`+(d.mealIds.length?d.mealIds.map(id=>{const m=meal(id);return `<button class="meal-select" onclick="selectMeal('${id}')"><div><strong>${m.title}</strong><small>${m.slotLabel?m.slotLabel+' · ':''}${portions(m)}</small></div><div class="arrow">›</div></button>`}).join(''):`<div class="empty">No meal currently planned.</div>`)+`</div>`).join('')}
+function selectMeal(id){selectedMealId=id;renderMeal();showView('meal')}function renderMeal(){const box=document.getElementById('meal-focus');if(!selectedMealId||!meal(selectedMealId)){box.innerHTML='<div class="card focus-card">Select a meal from the week.</div>';return}const m=meal(selectedMealId);let h=`<div class="card focus-card"><div class="kicker">${m.slotLabel||'Meal'} · ${m.cuisine||''}</div><div class="focus-title">${m.title}</div><div class="meta">${new Date(m.date+'T12:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'})} · ${portions(m)}</div>`;h+=`<div class="chips">${(m.portions.allocation||[]).map(x=>`<span class="chip">${x}</span>`).join('')}</div>`;if(m.arrangeForLunch)h+=`<div class="lunch-box"><b>Arrange for lunch</b>${m.arrangeForLunch.label}<br><span class="meta">${m.arrangeForLunch.instructions}</span></div>`;if(m.arrangedFromPreviousMeal)h+=`<div class="callout"><b>Prepared in advance</b><br>${m.arrangedFromPreviousMeal.label}.</div>`;if(m.ingredients)h+=`<div class="recipe-section"><h3>Ingredients</h3><ul>${m.ingredients.map(i=>`<li>${i.item} — ${i.quantity===null?'':i.quantity+' '}${i.unit}</li>`).join('')}</ul></div>`;h+=`<div class="recipe-section"><h3>Method</h3><ol>${m.method.map(x=>`<li>${x}</li>`).join('')}</ol></div>`;if(m.flavourNote)h+=`<div class="callout"><b>Flavour</b><br>${m.flavourNote}</div>`;if(m.barneyNote)h+=`<div class="callout"><b>Barney</b><br>${m.barneyNote}</div>`;if(m.storageNote)h+=`<div class="callout"><b>Storage / reheating</b><br>${m.storageNote}</div>`;h+='</div>';box.innerHTML=h}
+function renderShop(){const target=document.getElementById('shop-list');target.innerHTML=PLAN.shoppingList.map((x,i)=>`<label class="shop-item"><input type="checkbox" data-i="${i}"><span class="name">${x.item}</span><span class="qty">${x.quantity}</span></label>`).join('');const saved=JSON.parse(localStorage.getItem('foodplan-shop-v2')||'[]');document.querySelectorAll('.shop-item input').forEach(cb=>{cb.checked=saved.includes(+cb.dataset.i);cb.closest('.shop-item').classList.toggle('checked',cb.checked);cb.onchange=saveShop});updateProgress()}function saveShop(){const a=[...document.querySelectorAll('.shop-item input:checked')].map(x=>+x.dataset.i);localStorage.setItem('foodplan-shop-v2',JSON.stringify(a));document.querySelectorAll('.shop-item input').forEach(cb=>cb.closest('.shop-item').classList.toggle('checked',cb.checked));updateProgress()}function updateProgress(){document.getElementById('progress').textContent=document.querySelectorAll('.shop-item input:checked').length+' / '+PLAN.shoppingList.length}document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{if(b.dataset.view==='meal')renderMeal();showView(b.dataset.view)});loadPlan();
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(console.error))}
 </script>
 </body></html>
