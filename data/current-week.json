@@ -3,7 +3,7 @@
   "planId": "2026-09-01_7day",
   "status": "confirmed",
   "period": {
-    "label": "JSON CONNECTION TEST",
+    "label": "7-day food plan",
     "startDate": "2026-09-01",
     "endDate": "2026-09-07",
     "timezone": "Europe/London"
@@ -84,7 +84,7 @@
     "tue-lunch-pittas": {
       "id": "tue-lunch-pittas",
       "date": "2026-09-01",
-      "title": "TEST — Hummus, feta & salad pittas",
+      "title": "Hummus, feta & salad pittas",
       "cuisine": "Mediterranean",
       "mealMode": "standalone",
       "portions": {
