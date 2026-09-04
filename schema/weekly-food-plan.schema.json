@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/weekly-food-plan-v2.schema.json",
+  "title": "Weekly Food Plan v2",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "planId",
+    "status",
+    "period",
+    "household",
+    "days",
+    "meals",
+    "shoppingList"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "planId": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "confirmed",
+        "archived"
+      ]
+    },
+    "period": {
+      "type": "object",
+      "required": [
+        "label",
+        "startDate",
+        "endDate",
+        "timezone"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "household": {
+      "type": "array"
+    },
+    "days": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "dayName",
+          "mealIds"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "dayName": {
+            "type": "string"
+          },
+          "mealIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "meals": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/meal"
+      }
+    },
+    "openingStock": {
+      "type": "array"
+    },
+    "intentionalRemainders": {
+      "type": "array"
+    },
+    "usefulNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shoppingList": {
+      "type": "array"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "meal": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "title",
+        "mealMode",
+        "portions",
+        "method"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "title": {
+          "type": "string"
+        },
+        "cuisine": {
+          "type": "string"
+        },
+        "slotLabel": {
+          "type": "string"
+        },
+        "mealMode": {
+          "enum": [
+            "standalone",
+            "cook",
+            "planned_leftover"
+          ]
+        },
+        "sourceMealId": {
+          "type": "string"
+        },
+        "portions": {
+          "type": "object"
+        },
+        "ingredients": {
+          "type": "array"
+        },
+        "method": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "flavourNote": {
+          "type": "string"
+        },
+        "barneyNote": {
+          "type": "string"
+        },
+        "storageNote": {
+          "type": "string"
+        },
+        "arrangeForLunch": {
+          "type": "object",
+          "required": [
+            "enabled",
+            "portions",
+            "label",
+            "instructions"
+          ],
+          "properties": {
+            "enabled": {
+              "const": true
+            },
+            "portions": {
+              "type": "number",
+              "minimum": 1
+            },
+            "for": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            },
+            "label": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "arrangedFromPreviousMeal": {
+          "type": "object",
+          "required": [
+            "sourceMealId",
+            "label"
+          ],
+          "properties": {
+            "sourceMealId": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
