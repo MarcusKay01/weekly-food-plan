@@ -3,7 +3,7 @@
   "planId": "2026-09-01_7day",
   "status": "confirmed",
   "period": {
-    "label": "7-day food plan",
+    "label": "JSON CONNECTION TEST",
     "startDate": "2026-09-01",
     "endDate": "2026-09-07",
     "timezone": "Europe/London"
