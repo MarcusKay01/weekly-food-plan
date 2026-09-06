@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0.0",
-  "planId": "2026-09-05_7day",
+  "planId": "2026-09-07_7day",
   "status": "confirmed",
   "period": {
     "label": "7-day food plan",
-    "startDate": "2026-09-05",
-    "endDate": "2026-09-11",
+    "startDate": "2026-09-07",
+    "endDate": "2026-09-13",
     "timezone": "Europe/London"
   },
   "household": [
@@ -27,68 +27,69 @@
   ],
   "days": [
     {
-      "date": "2026-09-05",
-      "dayName": "Saturday",
-      "mealIds": [
-        "sat-lunch-flatbreads",
-        "sat-dinner-kofta"
-      ]
-    },
-    {
-      "date": "2026-09-06",
-      "dayName": "Sunday",
-      "mealIds": [
-        "sun-lunch-kofta",
-        "sun-dinner-roast-chicken"
-      ]
-    },
-    {
       "date": "2026-09-07",
       "dayName": "Monday",
       "mealIds": [
-        "mon-lunch-roast-chicken",
-        "mon-dinner-meatballs"
+        "mon-lunch-flatbread",
+        "mon-dinner-harissa-chicken"
       ]
     },
     {
       "date": "2026-09-08",
       "dayName": "Tuesday",
       "mealIds": [
-        "tue-lunch-meatballs",
-        "tue-dinner-sticky-chicken"
+        "tue-lunch-harissa-chicken",
+        "tue-dinner-sundried-chicken"
       ]
     },
     {
       "date": "2026-09-09",
       "dayName": "Wednesday",
       "mealIds": [
-        "wed-lunch-sticky-chicken",
-        "wed-dinner-tagine"
+        "wed-lunch-sundried-chicken",
+        "wed-dinner-moroccan-turkey"
       ]
     },
     {
       "date": "2026-09-10",
       "dayName": "Thursday",
       "mealIds": [
-        "thu-lunch-tagine",
-        "thu-dinner-fajitas"
+        "thu-lunch-moroccan-turkey",
+        "thu-dinner-thai-curry"
       ]
     },
     {
       "date": "2026-09-11",
       "dayName": "Friday",
       "mealIds": [
-        "fri-lunch-fajitas",
-        "fri-dinner-cod"
+        "fri-lunch-thai-curry",
+        "fri-dinner-lamb-meatballs"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "dayName": "Saturday",
+      "mealIds": [
+        "sat-lunch-lamb-meatballs",
+        "sat-dinner-lentil-bowls"
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "dayName": "Sunday",
+      "mealIds": [
+        "sun-lunch-lentil-bowls",
+        "sun-dinner-fajitas"
       ]
     }
   ],
   "meals": {
-    "sat-lunch-flatbreads": {
-      "id": "sat-lunch-flatbreads",
-      "date": "2026-09-05",
-      "title": "Mediterranean chicken & hummus flatbreads",
+    "mon-lunch-flatbread": {
+      "id": "mon-lunch-flatbread",
+      "date": "2026-09-07",
+      "title": "Hummus, feta & roasted vegetable flatbread",
       "cuisine": "Mediterranean",
+      "slotLabel": "Lunch",
       "mealMode": "standalone",
       "portions": {
         "adultServings": 2,
@@ -101,39 +102,39 @@
       },
       "ingredients": [
         {
-          "item": "Chicken breast",
-          "quantity": 400,
-          "unit": "g"
-        },
-        {
-          "item": "Flatbreads",
-          "quantity": 3,
+          "item": "Large flatbread",
+          "quantity": 1,
           "unit": "each"
         },
         {
           "item": "Hummus",
-          "quantity": 150,
+          "quantity": 100,
           "unit": "g"
         },
         {
-          "item": "Cucumber",
+          "item": "Feta",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "item": "Red pepper",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Courgette",
           "quantity": 0.5,
           "unit": "each"
         },
         {
-          "item": "Tomatoes",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Little gem lettuce",
+          "item": "Vine tomato",
           "quantity": 1,
           "unit": "each"
         },
         {
-          "item": "Lemon",
+          "item": "Olive oil",
           "quantity": 1,
-          "unit": "each"
+          "unit": "tbsp"
         },
         {
           "item": "Dried oregano",
@@ -141,300 +142,25 @@
           "unit": "tsp"
         },
         {
-          "item": "Olive oil",
-          "quantity": 1,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 1,
-          "unit": "clove"
-        },
-        {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
-        },
-        {
           "item": "Black pepper",
           "quantity": null,
           "unit": "to taste"
         }
       ],
       "method": [
-        "Season the chicken with oregano, garlic, lemon zest, olive oil, salt and pepper; pan-fry until cooked through and slice.",
-        "Warm the flatbreads and spread with hummus. Add chicken, cucumber, tomato and lettuce; finish adult portions with lemon juice and black pepper.",
-        "Serve Barney's components separately and cut appropriately if easier."
+        "Roast or pan-char the pepper and courgette with olive oil and oregano until tender.",
+        "Warm the flatbread, spread with hummus, then top with vegetables, chopped tomato and crumbled feta.",
+        "Cut Barney's portion into manageable pieces."
       ],
-      "flavourNote": "Use plenty of lemon and oregano so the flatbreads stay fresh and punchy rather than relying on extra fat.",
-      "barneyNote": "Keep his chicken mildly seasoned; serve flatbread and vegetables in manageable pieces.",
-      "slotLabel": "Lunch"
+      "flavourNote": "Use oregano and black pepper generously; hummus and feta provide salt and richness.",
+      "barneyNote": "Keep vegetables soft and avoid adding extra salt."
     },
-    "sat-dinner-kofta": {
-      "id": "sat-dinner-kofta",
-      "date": "2026-09-05",
-      "title": "Moroccan beef kofta with roasted vegetable couscous & harissa yoghurt",
-      "cuisine": "Moroccan",
-      "mealMode": "cook",
-      "portions": {
-        "adultServings": 4,
-        "childServings": 1,
-        "allocation": [
-          "2 adult Saturday dinner",
-          "Barney Saturday dinner",
-          "2 complete adult Sunday lunches"
-        ]
-      },
-      "ingredients": [
-        {
-          "item": "Beef mince",
-          "quantity": 800,
-          "unit": "g"
-        },
-        {
-          "item": "Couscous",
-          "quantity": 360,
-          "unit": "g"
-        },
-        {
-          "item": "Courgettes",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Red peppers",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Red onion",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Greek yoghurt",
-          "quantity": 250,
-          "unit": "g"
-        },
-        {
-          "item": "Harissa paste",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 4,
-          "unit": "cloves"
-        },
-        {
-          "item": "Lemon",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Fresh parsley",
-          "quantity": 20,
-          "unit": "g"
-        },
-        {
-          "item": "Ground cumin",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Ground coriander",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Smoked paprika",
-          "quantity": 1,
-          "unit": "tsp"
-        },
-        {
-          "item": "Olive oil",
-          "quantity": 3,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
-        },
-        {
-          "item": "Black pepper",
-          "quantity": null,
-          "unit": "to taste"
-        }
-      ],
-      "method": [
-        "Heat oven to 210°C fan. Chop courgettes, peppers and onion; toss with 2 tbsp oil, salt and pepper and roast 25–30 minutes.",
-        "Mix beef with half the garlic, cumin, coriander, paprika, parsley, salt and pepper. Shape into kofta and grill or pan-sear until browned and cooked through.",
-        "Cover couscous with equal volume boiling water, stand 5 minutes, fluff, then fold through roasted vegetables, lemon juice and parsley.",
-        "Mix yoghurt with harissa, remaining garlic and lemon. Keep Barney's sauce plain if preferred.",
-        "Before serving, box two complete adult portions of kofta, vegetable couscous and sauce for Sunday."
-      ],
-      "flavourNote": "Toast the spices briefly and season the beef assertively; lemon and harissa should give the finished plate acidity and warmth.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Keep one portion of yoghurt unharissaed if needed.",
-      "arrangeForLunch": {
-        "enabled": true,
-        "portions": 2,
-        "for": "2026-09-06",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
-      }
-    },
-    "sun-lunch-kofta": {
-      "id": "sun-lunch-kofta",
-      "date": "2026-09-06",
-      "title": "Moroccan beef kofta with roasted vegetable couscous & harissa yoghurt",
-      "cuisine": "Moroccan",
-      "mealMode": "planned_leftover",
-      "sourceMealId": "sat-dinner-kofta",
-      "portions": {
-        "adultServings": 2,
-        "childServings": 0,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch"
-        ]
-      },
-      "method": [
-        "Reheat the kofta and couscous thoroughly; add the reserved harissa yoghurt after heating."
-      ],
-      "storageNote": "Reserved deliberately Saturday night and chilled promptly.",
-      "slotLabel": "Lunch",
-      "arrangedFromPreviousMeal": {
-        "sourceMealId": "sat-dinner-kofta",
-        "label": "Exact complete meal prepared from the previous dinner"
-      }
-    },
-    "sun-dinner-roast-chicken": {
-      "id": "sun-dinner-roast-chicken",
-      "date": "2026-09-06",
-      "title": "Lemon, garlic & herb roast chicken with crispy potatoes, green beans & salsa verde",
-      "cuisine": "Italian/Mediterranean",
-      "mealMode": "cook",
-      "portions": {
-        "adultServings": 4,
-        "childServings": 1,
-        "allocation": [
-          "2 adult Sunday dinner",
-          "Barney Sunday dinner",
-          "2 complete adult Monday lunches"
-        ]
-      },
-      "ingredients": [
-        {
-          "item": "Boneless skinless chicken thighs",
-          "quantity": 800,
-          "unit": "g"
-        },
-        {
-          "item": "Baby/new potatoes",
-          "quantity": 1100,
-          "unit": "g"
-        },
-        {
-          "item": "Green beans",
-          "quantity": 450,
-          "unit": "g"
-        },
-        {
-          "item": "Lemons",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 5,
-          "unit": "cloves"
-        },
-        {
-          "item": "Fresh parsley",
-          "quantity": 40,
-          "unit": "g"
-        },
-        {
-          "item": "Capers",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Dijon mustard",
-          "quantity": 1,
-          "unit": "tsp"
-        },
-        {
-          "item": "Olive oil",
-          "quantity": 5,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Dried oregano",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
-        },
-        {
-          "item": "Black pepper",
-          "quantity": null,
-          "unit": "to taste"
-        }
-      ],
-      "method": [
-        "Heat oven to 210°C fan. Halve potatoes, toss with 2 tbsp oil, oregano, salt and pepper and roast 20 minutes.",
-        "Add chicken seasoned with garlic, lemon zest, salt and pepper; roast 25–30 minutes until browned and cooked through.",
-        "Steam or boil green beans until just tender.",
-        "Finely chop parsley and capers; mix with mustard, lemon juice and remaining olive oil to make salsa verde.",
-        "Box two complete portions of chicken, potatoes, beans and salsa verde for Monday before serving."
-      ],
-      "flavourNote": "Roast hard enough to crisp the potatoes and brown the chicken; the sharp, herby salsa verde is essential to balance the roast.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Serve Barney's salsa lightly or separately; check capers for saltiness.",
-      "arrangeForLunch": {
-        "enabled": true,
-        "portions": 2,
-        "for": "2026-09-07",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
-      }
-    },
-    "mon-lunch-roast-chicken": {
-      "id": "mon-lunch-roast-chicken",
+    "mon-dinner-harissa-chicken": {
+      "id": "mon-dinner-harissa-chicken",
       "date": "2026-09-07",
-      "title": "Lemon, garlic & herb roast chicken with crispy potatoes, green beans & salsa verde",
-      "cuisine": "Italian/Mediterranean",
-      "mealMode": "planned_leftover",
-      "sourceMealId": "sun-dinner-roast-chicken",
-      "portions": {
-        "adultServings": 2,
-        "childServings": 0,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch"
-        ]
-      },
-      "method": [
-        "Reheat chicken, potatoes and beans thoroughly; add reserved salsa verde after heating."
-      ],
-      "storageNote": "Reserved deliberately Sunday night and chilled promptly.",
-      "slotLabel": "Lunch",
-      "arrangedFromPreviousMeal": {
-        "sourceMealId": "sun-dinner-roast-chicken",
-        "label": "Exact complete meal prepared from the previous dinner"
-      }
-    },
-    "mon-dinner-meatballs": {
-      "id": "mon-dinner-meatballs",
-      "date": "2026-09-07",
-      "title": "Greek baked meatballs with tomato, feta & orzo",
-      "cuisine": "Greek",
+      "title": "Harissa chicken, feta & roasted vegetable flatbreads with hummus & lemon",
+      "cuisine": "North African/Mediterranean",
+      "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
         "adultServings": 4,
@@ -447,39 +173,39 @@
       },
       "ingredients": [
         {
-          "item": "Beef mince",
-          "quantity": 750,
+          "item": "Chicken breast",
+          "quantity": 650,
           "unit": "g"
         },
         {
-          "item": "Orzo",
-          "quantity": 400,
-          "unit": "g"
+          "item": "Large flatbreads",
+          "quantity": 3,
+          "unit": "each"
         },
         {
-          "item": "Passata",
-          "quantity": 700,
-          "unit": "g"
-        },
-        {
-          "item": "Baby spinach",
+          "item": "Hummus",
           "quantity": 200,
           "unit": "g"
         },
         {
           "item": "Feta",
-          "quantity": 200,
+          "quantity": 120,
           "unit": "g"
         },
         {
-          "item": "Onion",
+          "item": "Red peppers",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Red onion",
           "quantity": 1,
           "unit": "each"
         },
         {
-          "item": "Garlic",
-          "quantity": 4,
-          "unit": "cloves"
+          "item": "Fresh tomatoes",
+          "quantity": 250,
+          "unit": "g"
         },
         {
           "item": "Lemon",
@@ -487,19 +213,9 @@
           "unit": "each"
         },
         {
-          "item": "Fresh parsley",
-          "quantity": 20,
+          "item": "Harissa paste",
+          "quantity": 30,
           "unit": "g"
-        },
-        {
-          "item": "Dried oregano",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Ground cumin",
-          "quantity": 1,
-          "unit": "tsp"
         },
         {
           "item": "Olive oil",
@@ -507,40 +223,41 @@
           "unit": "tbsp"
         },
         {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
+          "item": "Garlic",
+          "quantity": 2,
+          "unit": "cloves"
         },
         {
-          "item": "Black pepper",
-          "quantity": null,
-          "unit": "to taste"
+          "item": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp"
         }
       ],
       "method": [
-        "Heat oven to 200°C fan. Mix beef with half the onion, half the garlic, oregano, cumin, parsley, lemon zest, salt and pepper; form meatballs and brown in an ovenproof pan.",
-        "Soften remaining onion and garlic in oil, add passata and season. Stir in orzo plus 500 ml water, nestle in meatballs and bake about 20 minutes, stirring once.",
-        "Fold in spinach, crumble over feta and bake 5 minutes more. Finish with lemon and black pepper.",
-        "Box two complete portions of meatballs, tomato-feta orzo and spinach for Tuesday."
+        "Mix harissa with olive oil, garlic, cumin and half the lemon juice; coat the chicken.",
+        "Roast or griddle chicken with sliced peppers and onion until cooked through and lightly charred.",
+        "Warm flatbreads and serve every complete portion with hummus, chicken, vegetables, tomatoes, feta and lemon.",
+        "Before serving, box two complete adult portions for Tuesday lunch."
       ],
-      "flavourNote": "Use oregano, garlic and lemon generously; feta supplies salinity, so adjust final salt only after adding it.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Crumble less feta over Barney's portion if desired and ensure meatballs are cut safely.",
+      "flavourNote": "Aim for smoky heat, creamy hummus, salty feta and plenty of fresh lemon acidity.",
+      "barneyNote": "Take Barney's chicken and vegetables before adding extra harissa; serve deconstructed if easier.",
+      "storageNote": "Chill the two complete lunch portions promptly.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
         "for": "2026-09-08",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
+        "label": "2 complete adult portions for Tuesday lunch",
+        "instructions": "Reserve and box 2 complete portions including flatbread, hummus, chicken, vegetables, feta and lemon."
       }
     },
-    "tue-lunch-meatballs": {
-      "id": "tue-lunch-meatballs",
+    "tue-lunch-harissa-chicken": {
+      "id": "tue-lunch-harissa-chicken",
       "date": "2026-09-08",
-      "title": "Greek baked meatballs with tomato, feta & orzo",
-      "cuisine": "Greek",
+      "title": "Harissa chicken, feta & roasted vegetable flatbreads with hummus & lemon",
+      "cuisine": "North African/Mediterranean",
+      "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
-      "sourceMealId": "mon-dinner-meatballs",
+      "sourceMealId": "mon-dinner-harissa-chicken",
       "portions": {
         "adultServings": 2,
         "childServings": 0,
@@ -550,20 +267,20 @@
         ]
       },
       "method": [
-        "Reheat the complete meatball, orzo, spinach and feta portion thoroughly."
+        "Reheat chicken and vegetables thoroughly; keep hummus/feta cool and warm the flatbread separately if practical."
       ],
-      "storageNote": "Reserved deliberately Monday night and chilled promptly.",
-      "slotLabel": "Lunch",
+      "storageNote": "Prepared deliberately Monday night and chilled promptly.",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "mon-dinner-meatballs",
+        "sourceMealId": "mon-dinner-harissa-chicken",
         "label": "Exact complete meal prepared from the previous dinner"
       }
     },
-    "tue-dinner-sticky-chicken": {
-      "id": "tue-dinner-sticky-chicken",
+    "tue-dinner-sundried-chicken": {
+      "id": "tue-dinner-sundried-chicken",
       "date": "2026-09-08",
-      "title": "Sticky ginger chicken rice bowls with broccoli, carrots & edamame",
-      "cuisine": "East Asian-inspired",
+      "title": "Creamy sun-dried tomato chicken with new potatoes, courgette & tomatoes",
+      "cuisine": "Italian/Mediterranean",
+      "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
         "adultServings": 4,
@@ -577,94 +294,80 @@
       "ingredients": [
         {
           "item": "Chicken breast",
-          "quantity": 800,
+          "quantity": 650,
           "unit": "g"
         },
         {
-          "item": "Basmati rice",
-          "quantity": 400,
+          "item": "Potatoes",
+          "quantity": 900,
           "unit": "g"
         },
         {
-          "item": "Broccoli",
-          "quantity": 1,
-          "unit": "large head"
-        },
-        {
-          "item": "Carrots",
-          "quantity": 3,
+          "item": "Courgettes",
+          "quantity": 1.5,
           "unit": "each"
         },
         {
-          "item": "Frozen edamame",
+          "item": "Fresh tomatoes",
           "quantity": 300,
           "unit": "g"
         },
         {
-          "item": "Fresh ginger",
-          "quantity": 35,
+          "item": "Sun-dried tomatoes",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "item": "Double cream",
+          "quantity": 150,
+          "unit": "ml"
+        },
+        {
+          "item": "Parmesan",
+          "quantity": 50,
           "unit": "g"
         },
         {
           "item": "Garlic",
-          "quantity": 4,
+          "quantity": 2,
           "unit": "cloves"
         },
         {
-          "item": "Limes",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Reduced-salt soy sauce",
-          "quantity": 5,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Honey",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Sesame oil",
+          "item": "Dried oregano",
           "quantity": 2,
           "unit": "tsp"
         },
         {
-          "item": "Sesame seeds",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Cornflour",
-          "quantity": 1,
-          "unit": "tbsp"
+          "item": "Black pepper",
+          "quantity": null,
+          "unit": "to taste"
         }
       ],
       "method": [
-        "Cook rice. Steam broccoli, carrots and edamame until just tender.",
-        "Mix soy, honey, ginger, garlic, lime juice, sesame oil, cornflour and 100 ml water.",
-        "Stir-fry sliced chicken until browned, add sauce and bubble until glossy and cooked through. Fold in vegetables or serve alongside.",
-        "Box two complete portions of chicken, sauce, rice and vegetables for Wednesday; scatter sesame over adult portions."
+        "Roast halved potatoes until golden and tender.",
+        "Brown chicken, add courgette and garlic, then sun-dried tomatoes and fresh tomatoes.",
+        "Add cream with a splash of water, simmer until cooked, then finish with Parmesan, oregano and black pepper.",
+        "Box two complete portions including potatoes and sauce for Wednesday lunch before serving."
       ],
-      "flavourNote": "Keep the sauce balanced: savoury soy, fresh ginger, lime acidity and enough honey for gloss rather than sweetness.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Take Barney's chicken/vegetables out before adding the full adult sauce if sodium is a concern.",
+      "flavourNote": "Use a little oil from the sun-dried tomato jar if suitable; oregano and black pepper balance the cream.",
+      "barneyNote": "Keep his portion mildly seasoned and cut chicken and potatoes appropriately.",
+      "storageNote": "Chill two complete portions promptly; reheat until piping hot.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
         "for": "2026-09-09",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
+        "label": "2 complete adult portions for Wednesday lunch",
+        "instructions": "Reserve 2 complete portions including chicken, sauce, vegetables and potatoes."
       }
     },
-    "wed-lunch-sticky-chicken": {
-      "id": "wed-lunch-sticky-chicken",
+    "wed-lunch-sundried-chicken": {
+      "id": "wed-lunch-sundried-chicken",
       "date": "2026-09-09",
-      "title": "Sticky ginger chicken rice bowls with broccoli, carrots & edamame",
-      "cuisine": "East Asian-inspired",
+      "title": "Creamy sun-dried tomato chicken with new potatoes, courgette & tomatoes",
+      "cuisine": "Italian/Mediterranean",
+      "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
-      "sourceMealId": "tue-dinner-sticky-chicken",
+      "sourceMealId": "tue-dinner-sundried-chicken",
       "portions": {
         "adultServings": 2,
         "childServings": 0,
@@ -674,20 +377,20 @@
         ]
       },
       "method": [
-        "Reheat chicken, rice and vegetables until piping hot; do not repeatedly reheat rice."
+        "Reheat the complete chicken, sauce, vegetables and potato portion until piping hot."
       ],
-      "storageNote": "Reserved deliberately Tuesday night and chilled promptly.",
-      "slotLabel": "Lunch",
+      "storageNote": "Prepared deliberately Tuesday night and chilled promptly.",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "tue-dinner-sticky-chicken",
+        "sourceMealId": "tue-dinner-sundried-chicken",
         "label": "Exact complete meal prepared from the previous dinner"
       }
     },
-    "wed-dinner-tagine": {
-      "id": "wed-dinner-tagine",
+    "wed-dinner-moroccan-turkey": {
+      "id": "wed-dinner-moroccan-turkey",
       "date": "2026-09-09",
-      "title": "Chicken, chickpea & apricot tagine with lemon-herb couscous",
+      "title": "Moroccan turkey, chickpea & vegetable couscous with lemon-harissa sauce",
       "cuisine": "Moroccan",
+      "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
         "adultServings": 4,
@@ -700,28 +403,28 @@
       },
       "ingredients": [
         {
-          "item": "Boneless skinless chicken thighs",
-          "quantity": 750,
+          "item": "Turkey mince",
+          "quantity": 650,
           "unit": "g"
         },
         {
           "item": "Chickpeas",
           "quantity": 1,
-          "unit": "400 g can"
+          "unit": "400g tin"
         },
         {
           "item": "Couscous",
-          "quantity": 360,
+          "quantity": 350,
           "unit": "g"
         },
         {
-          "item": "Chopped tomatoes",
+          "item": "Red pepper",
           "quantity": 1,
-          "unit": "400 g can"
+          "unit": "each"
         },
         {
-          "item": "Carrots",
-          "quantity": 3,
+          "item": "Courgette",
+          "quantity": 1,
           "unit": "each"
         },
         {
@@ -730,14 +433,9 @@
           "unit": "each"
         },
         {
-          "item": "Dried apricots",
-          "quantity": 120,
-          "unit": "g"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 4,
-          "unit": "cloves"
+          "item": "Chopped tomatoes",
+          "quantity": 1,
+          "unit": "400g tin"
         },
         {
           "item": "Lemon",
@@ -745,9 +443,14 @@
           "unit": "each"
         },
         {
-          "item": "Fresh coriander",
-          "quantity": 20,
+          "item": "Harissa paste",
+          "quantity": 25,
           "unit": "g"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 2,
+          "unit": "cloves"
         },
         {
           "item": "Ground cumin",
@@ -756,59 +459,51 @@
         },
         {
           "item": "Ground coriander",
-          "quantity": 2,
+          "quantity": 1,
           "unit": "tsp"
         },
         {
-          "item": "Ground ginger",
+          "item": "Smoked paprika",
           "quantity": 1,
           "unit": "tsp"
         },
         {
           "item": "Ground cinnamon",
-          "quantity": 0.5,
+          "quantity": 0.25,
           "unit": "tsp"
         },
         {
-          "item": "Olive oil",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
-        },
-        {
-          "item": "Black pepper",
-          "quantity": null,
-          "unit": "to taste"
+          "item": "Fresh coriander",
+          "quantity": 15,
+          "unit": "g"
         }
       ],
       "method": [
-        "Soften onion and carrots in oil. Add garlic and spices and cook 1 minute until fragrant.",
-        "Add chicken, tomatoes, chickpeas, apricots and 250 ml water. Simmer covered 20 minutes, then uncovered until rich and the chicken is cooked.",
-        "Prepare couscous with boiling water; fluff with lemon zest, juice and coriander.",
-        "Adjust the tagine with salt, pepper and lemon. Box two complete portions of tagine and couscous for Thursday work lunches."
+        "Brown turkey well with onion and garlic. Add cumin, coriander, smoked paprika and cinnamon.",
+        "Add pepper and courgette, then chickpeas and chopped tomatoes; simmer until rich and tender.",
+        "Prepare couscous, fluff and season with lemon and coriander.",
+        "Loosen harissa with lemon juice and a little water for the adult sauce.",
+        "Box two complete adult portions of turkey mixture, couscous and sauce for Thursday work lunches."
       ],
-      "flavourNote": "Bloom the spices before adding liquid and finish with lemon so the apricots add depth without making the dish sweet.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Keep Barney's seasoning gentle and cut apricots/chicken appropriately.",
+      "flavourNote": "Brown the turkey properly; lemon and coriander at the end keep the dish bright.",
+      "barneyNote": "Remove Barney's portion before the finishing harissa sauce.",
+      "storageNote": "Chill Thursday work lunches promptly.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
         "for": "2026-09-10",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
+        "label": "2 complete adult portions for Thursday work lunches",
+        "instructions": "Reserve and box 2 complete portions including turkey mixture, couscous and sauce."
       }
     },
-    "thu-lunch-tagine": {
-      "id": "thu-lunch-tagine",
+    "thu-lunch-moroccan-turkey": {
+      "id": "thu-lunch-moroccan-turkey",
       "date": "2026-09-10",
-      "title": "Chicken, chickpea & apricot tagine with lemon-herb couscous",
+      "title": "Moroccan turkey, chickpea & vegetable couscous with lemon-harissa sauce",
       "cuisine": "Moroccan",
+      "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
-      "sourceMealId": "wed-dinner-tagine",
+      "sourceMealId": "wed-dinner-moroccan-turkey",
       "portions": {
         "adultServings": 2,
         "childServings": 0,
@@ -818,20 +513,20 @@
         ]
       },
       "method": [
-        "Reheat tagine and couscous thoroughly at work."
+        "Reheat the turkey mixture and couscous thoroughly; add reserved sauce as packed."
       ],
-      "storageNote": "Reserved deliberately Wednesday night for Marcus and Bron's work lunches.",
-      "slotLabel": "Lunch",
+      "storageNote": "Prepared deliberately Wednesday night for work lunches.",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "wed-dinner-tagine",
+        "sourceMealId": "wed-dinner-moroccan-turkey",
         "label": "Exact complete meal prepared from the previous dinner"
       }
     },
-    "thu-dinner-fajitas": {
-      "id": "thu-dinner-fajitas",
+    "thu-dinner-thai-curry": {
+      "id": "thu-dinner-thai-curry",
       "date": "2026-09-10",
-      "title": "Smoky chicken fajitas with peppers, onions, black beans, avocado, lime & seasoned yoghurt",
-      "cuisine": "Mexican-inspired",
+      "title": "Quick red Thai chicken curry with rice & vegetables",
+      "cuisine": "Thai",
+      "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
         "adultServings": 4,
@@ -844,104 +539,90 @@
       "ingredients": [
         {
           "item": "Chicken breast",
-          "quantity": 700,
+          "quantity": 650,
           "unit": "g"
         },
         {
-          "item": "Large flour tortillas",
-          "quantity": 8,
-          "unit": "each"
+          "item": "Rice",
+          "quantity": 300,
+          "unit": "g"
         },
         {
-          "item": "Mixed peppers",
-          "quantity": 3,
-          "unit": "each"
-        },
-        {
-          "item": "Red onions",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Black beans",
+          "item": "Red pepper",
           "quantity": 1,
-          "unit": "400 g can"
-        },
-        {
-          "item": "Avocados",
-          "quantity": 2,
           "unit": "each"
         },
         {
-          "item": "Greek yoghurt",
-          "quantity": 200,
+          "item": "Broccoli",
+          "quantity": 250,
           "unit": "g"
         },
         {
-          "item": "Limes",
-          "quantity": 2,
-          "unit": "each"
+          "item": "Mangetout or green beans",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Red Thai curry paste",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "item": "Coconut milk",
+          "quantity": 1,
+          "unit": "400ml tin"
+        },
+        {
+          "item": "Fresh ginger",
+          "quantity": 15,
+          "unit": "g"
         },
         {
           "item": "Garlic",
-          "quantity": 3,
+          "quantity": 2,
           "unit": "cloves"
         },
         {
-          "item": "Smoked paprika",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Ground cumin",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Dried oregano",
+          "item": "Lime",
           "quantity": 1,
-          "unit": "tsp"
+          "unit": "each"
         },
         {
-          "item": "Olive oil",
-          "quantity": 2,
-          "unit": "tbsp"
+          "item": "Fresh coriander",
+          "quantity": 15,
+          "unit": "g"
         },
         {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
-        },
-        {
-          "item": "Black pepper",
-          "quantity": null,
-          "unit": "to taste"
+          "item": "Spring onions",
+          "quantity": 3,
+          "unit": "each"
         }
       ],
       "method": [
-        "Slice chicken, peppers and onions. Toss with garlic, paprika, cumin, oregano, oil, salt and pepper; stir-fry over high heat until browned and cooked.",
-        "Drain black beans and warm through with the fajita mixture.",
-        "Mash avocado with lime and seasoning. Mix yoghurt with lime zest, juice and black pepper.",
-        "Warm tortillas. Before eating, box half the chicken-pepper-bean mixture plus 4 tortillas and proportional avocado and yoghurt for Friday lunch; chill promptly."
+        "Cook the rice.",
+        "Fry curry paste with ginger and garlic until aromatic; add chicken, then coconut milk.",
+        "Add pepper, broccoli, mangetout/beans and sliced spring onions and cook until just tender.",
+        "Finish with lime and coriander.",
+        "Box two complete curry-and-rice portions for Friday work lunches before serving."
       ],
-      "flavourNote": "Use high heat to char the peppers and chicken. Lime in both toppings keeps the smoky filling fresh.",
-      "slotLabel": "Dinner",
-      "barneyNote": "Barney eats at nursery Thursday.",
+      "flavourNote": "Fry the curry paste first and finish assertively with lime for heat-richness-acidity balance.",
+      "storageNote": "Chill two complete portions promptly and reheat thoroughly.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
         "for": "2026-09-11",
-        "label": "2 complete adult portions for the next day's lunch",
-        "instructions": "Before serving, reserve and box 2 complete adult portions, including every component and sauce, for the following day."
+        "label": "2 complete adult portions for Friday work lunches",
+        "instructions": "Reserve 2 complete portions including curry, vegetables and rice."
       }
     },
-    "fri-lunch-fajitas": {
-      "id": "fri-lunch-fajitas",
+    "fri-lunch-thai-curry": {
+      "id": "fri-lunch-thai-curry",
       "date": "2026-09-11",
-      "title": "Smoky chicken fajitas with peppers, onions, black beans, avocado, lime & seasoned yoghurt",
-      "cuisine": "Mexican-inspired",
+      "title": "Quick red Thai chicken curry with rice & vegetables",
+      "cuisine": "Thai",
+      "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
-      "sourceMealId": "thu-dinner-fajitas",
+      "sourceMealId": "thu-dinner-thai-curry",
       "portions": {
         "adultServings": 2,
         "childServings": 0,
@@ -951,84 +632,75 @@
         ]
       },
       "method": [
-        "Reheat the chicken, peppers and beans thoroughly; keep tortillas, avocado and yoghurt separate and add after heating."
+        "Reheat curry and rice until piping hot."
       ],
-      "storageNote": "All components deliberately portioned Thursday night for work lunches.",
-      "slotLabel": "Lunch",
+      "storageNote": "Prepared deliberately Thursday night for work lunches.",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "thu-dinner-fajitas",
+        "sourceMealId": "thu-dinner-thai-curry",
         "label": "Exact complete meal prepared from the previous dinner"
       }
     },
-    "fri-dinner-cod": {
-      "id": "fri-dinner-cod",
+    "fri-dinner-lamb-meatballs": {
+      "id": "fri-dinner-lamb-meatballs",
       "date": "2026-09-11",
-      "title": "Mediterranean baked cod with lemon-herb potatoes, roasted tomatoes, courgette & olives",
+      "title": "Mediterranean lamb meatballs with tomato-Parmesan sauce, spinach & pasta",
       "cuisine": "Mediterranean",
+      "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 2,
+        "adultServings": 4,
         "childServings": 1,
         "allocation": [
           "2 adult Friday dinner",
-          "Barney Friday dinner"
+          "Barney Friday dinner",
+          "2 complete adult Saturday lunches"
         ]
       },
       "ingredients": [
         {
-          "item": "Cod fillets",
-          "quantity": 450,
-          "unit": "g"
-        },
-        {
-          "item": "Baby/new potatoes",
+          "item": "Lamb mince",
           "quantity": 650,
           "unit": "g"
         },
         {
-          "item": "Cherry tomatoes",
+          "item": "Dry pasta",
+          "quantity": 350,
+          "unit": "g"
+        },
+        {
+          "item": "Chopped tomatoes",
+          "quantity": 1,
+          "unit": "400g tin"
+        },
+        {
+          "item": "Passata",
           "quantity": 300,
           "unit": "g"
         },
         {
-          "item": "Courgette",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Olives",
+          "item": "Parmesan",
           "quantity": 80,
           "unit": "g"
         },
         {
-          "item": "Lemon",
+          "item": "Onion",
           "quantity": 1,
           "unit": "each"
         },
         {
-          "item": "Garlic",
-          "quantity": 3,
-          "unit": "cloves"
-        },
-        {
-          "item": "Fresh parsley",
-          "quantity": 20,
+          "item": "Spinach",
+          "quantity": 300,
           "unit": "g"
         },
         {
+          "item": "Garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
           "item": "Dried oregano",
-          "quantity": 1,
+          "quantity": 2,
           "unit": "tsp"
-        },
-        {
-          "item": "Olive oil",
-          "quantity": 2.5,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Salt",
-          "quantity": null,
-          "unit": "to taste"
         },
         {
           "item": "Black pepper",
@@ -1037,386 +709,486 @@
         }
       ],
       "method": [
-        "Heat oven to 210°C fan. Halve potatoes and roast with 1½ tbsp oil, oregano, garlic, salt and pepper for 20 minutes.",
-        "Add courgette and tomatoes and roast 10 minutes. Nestle in cod, drizzle with remaining oil and lemon, then bake 10–12 minutes until just cooked.",
-        "Add olives and parsley at the end and finish adult portions with extra lemon and black pepper."
+        "Season lamb with garlic, oregano and black pepper; form meatballs and brown thoroughly.",
+        "Soften onion, add chopped tomatoes and passata, then return meatballs and simmer until cooked.",
+        "Stir spinach through the sauce until wilted.",
+        "Cook pasta and serve with meatballs and sauce; finish with Parmesan.",
+        "Box two complete portions for Saturday lunch before serving."
       ],
-      "flavourNote": "Do not overcook the cod; the olives, garlic, oregano and lemon should provide a bright Mediterranean finish.",
+      "flavourNote": "Brown the lamb deeply; oregano, garlic, tomato and Parmesan give the Mediterranean profile.",
+      "barneyNote": "Make small soft meatballs or cut them well; avoid extra salt.",
+      "storageNote": "Chill two complete portions promptly.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-12",
+        "label": "2 complete adult portions for Saturday lunch",
+        "instructions": "Reserve 2 complete portions including pasta, meatballs, spinach-tomato sauce and Parmesan."
+      }
+    },
+    "sat-lunch-lamb-meatballs": {
+      "id": "sat-lunch-lamb-meatballs",
+      "date": "2026-09-12",
+      "title": "Mediterranean lamb meatballs with tomato-Parmesan sauce, spinach & pasta",
+      "cuisine": "Mediterranean",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "fri-dinner-lamb-meatballs",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat pasta, meatballs and sauce thoroughly."
+      ],
+      "storageNote": "Prepared deliberately Friday night and chilled promptly.",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "fri-dinner-lamb-meatballs",
+        "label": "Exact complete meal prepared from the previous dinner"
+      }
+    },
+    "sat-dinner-lentil-bowls": {
+      "id": "sat-dinner-lentil-bowls",
+      "date": "2026-09-12",
+      "title": "Lemony lentil, feta & roasted vegetable bowls with crispy potatoes",
+      "cuisine": "Mediterranean",
       "slotLabel": "Dinner",
-      "barneyNote": "Check cod carefully for bones; keep Barney's olives limited because of salt."
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Saturday dinner",
+          "Barney Saturday dinner",
+          "2 complete adult Sunday lunches"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Red lentils",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": 900,
+          "unit": "g"
+        },
+        {
+          "item": "Feta",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Courgette",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Red pepper",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Red onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Fresh tomatoes",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Mustard",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Dried oregano",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Fresh coriander",
+          "quantity": 15,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Roast potatoes until crisp and roast courgette, pepper, onion and tomatoes until caramelised.",
+        "Cook lentils until tender but not watery; season with lemon and black pepper.",
+        "Whisk lemon, mustard and olive oil into a sharp dressing.",
+        "Assemble every complete portion with lentils, potatoes, roasted vegetables, feta, dressing and herbs.",
+        "Box two complete bowls for Sunday lunch."
+      ],
+      "flavourNote": "The lemon-mustard dressing should be sharp enough to cut through the potatoes and feta.",
+      "barneyNote": "Serve components separately if useful and go lightly on the mustard dressing.",
+      "storageNote": "Chill two complete portions; dressing can be packed separately but remains part of the meal.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-13",
+        "label": "2 complete adult portions for Sunday lunch",
+        "instructions": "Reserve 2 complete portions including lentils, potatoes, vegetables, feta and dressing."
+      }
+    },
+    "sun-lunch-lentil-bowls": {
+      "id": "sun-lunch-lentil-bowls",
+      "date": "2026-09-13",
+      "title": "Lemony lentil, feta & roasted vegetable bowls with crispy potatoes",
+      "cuisine": "Mediterranean",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "sourceMealId": "sat-dinner-lentil-bowls",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat potatoes, lentils and vegetables as preferred; add feta and dressing after heating."
+      ],
+      "storageNote": "Prepared deliberately Saturday night and chilled promptly.",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "sat-dinner-lentil-bowls",
+        "label": "Exact complete meal prepared from the previous dinner"
+      }
+    },
+    "sun-dinner-fajitas": {
+      "id": "sun-dinner-fajitas",
+      "date": "2026-09-13",
+      "title": "Chicken fajitas with peppers, onions, salsa & avocado",
+      "cuisine": "Mexican-inspired",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "Marcus dinner",
+          "Bron dinner",
+          "Barney dinner"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Chicken breast",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Medium tortillas",
+          "quantity": 8,
+          "unit": "each"
+        },
+        {
+          "item": "Red peppers",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Avocado",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Salsa",
+          "quantity": 1,
+          "unit": "jar"
+        },
+        {
+          "item": "Lime",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "item": "Ground cumin",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Smoked paprika",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "Fresh coriander",
+          "quantity": 15,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Slice chicken, peppers and onion. Season chicken with cumin, smoked paprika and garlic.",
+        "Cook chicken over high heat for good colour, then cook peppers and onions until softened but lively.",
+        "Warm tortillas and serve with salsa, avocado, lime and coriander."
+      ],
+      "flavourNote": "High heat and good browning matter; finish with lime rather than relying only on spice.",
+      "barneyNote": "Keep his chicken mild, cut vegetables soft/small and serve components in an easy-to-eat format."
     }
   },
-  "openingStock": [],
+  "openingStock": [
+    "750g new potatoes",
+    "a few jacket potatoes",
+    "2 large flatbreads",
+    "2 lemons",
+    "1 red onion",
+    "1 courgette",
+    "2 red peppers",
+    "4 vine tomatoes",
+    "spring onions",
+    "~3 chicken breasts",
+    "sun-dried tomatoes",
+    "~200g red lentils",
+    "1 pot hummus",
+    "~2/3 block feta",
+    "~2/3 block Parmesan",
+    "double cream",
+    "red Thai curry paste",
+    "harissa paste",
+    "mustard",
+    "garlic",
+    "olive oil, salt, black pepper and other confirmed basics"
+  ],
   "intentionalRemainders": [
-    {
-      "item": "Chicken breast",
-      "purchased": "2 kg",
-      "plannedUse": "1.9 kg",
-      "remainder": "~100 g",
-      "action": "Freeze."
-    },
-    {
-      "item": "Chicken thighs",
-      "purchased": "1.6 kg",
-      "plannedUse": "1.55 kg",
-      "remainder": "~50 g",
-      "action": "Freeze or add proportionally to the relevant dinner."
-    },
-    {
-      "item": "Beef mince",
-      "purchased": "1.6 kg",
-      "plannedUse": "1.55 kg",
-      "remainder": "~50 g",
-      "action": "Freeze or add proportionally to kofta/meatballs."
-    },
-    {
-      "item": "Cod",
-      "purchased": "500 g",
-      "plannedUse": "450 g",
-      "remainder": "~50 g",
-      "action": "Cook with Friday dinner if pack cannot be divided."
-    },
-    {
-      "item": "Couscous",
-      "purchased": "1 kg",
-      "plannedUse": "720 g",
-      "remainder": "~280 g",
-      "action": "Store dry."
-    },
-    {
-      "item": "Orzo",
-      "purchased": "500 g",
-      "plannedUse": "400 g",
-      "remainder": "~100 g",
-      "action": "Store dry."
-    },
-    {
-      "item": "Basmati rice",
-      "purchased": "500 g",
-      "plannedUse": "400 g",
-      "remainder": "~100 g",
-      "action": "Store dry."
-    },
-    {
-      "item": "Greek yoghurt",
-      "purchased": "500 g",
-      "plannedUse": "450 g",
-      "remainder": "~50 g",
-      "action": "Use as snack/breakfast."
-    },
-    {
-      "item": "Frozen edamame",
-      "purchased": "500 g",
-      "plannedUse": "300 g",
-      "remainder": "~200 g",
-      "action": "Keep frozen."
-    },
-    {
-      "item": "Dried apricots",
-      "purchased": "200 g",
-      "plannedUse": "120 g",
-      "remainder": "~80 g",
-      "action": "Store for snacks/future cooking."
-    },
-    {
-      "item": "Olives",
-      "purchased": "~200 g jar",
-      "plannedUse": "80 g",
-      "remainder": "~120 g",
-      "action": "Refrigerate for future meals."
-    }
+    "Any chicken remaining after the 2.45kg total weekly recipe requirement will be frozen.",
+    "Any turkey or lamb mince bought above the required 650g will be frozen.",
+    "Any potatoes remaining after Tuesday and Saturday will be stored for later use.",
+    "Any flatbreads above the two additional required will be frozen.",
+    "Unused portions of standard 500g couscous, rice, pasta and passata packs remain as cupboard stock.",
+    "Cheddar cheese and baked beans are household purchases, not allocated to a planned meal."
   ],
   "usefulNotes": [
-    "Opening stock assumed zero for this plan.",
-    "Dinner-derived lunches are exact complete portions of the source dinner; their ingredients are counted only in the source dinner.",
-    "No additional breakfast, snack, toiletry or household items were requested.",
-    "Thursday dinner excludes Barney because he eats at nursery."
+    "Spring onions from opening stock are used in Thursday's Thai curry.",
+    "Friday's previously unspecified vegetable component is fixed as 300g spinach in the tomato sauce.",
+    "Parmesan is limited to 50g Tuesday and 80g Friday so no additional Parmesan is purchased."
   ],
   "shoppingList": [
     {
+      "category": "Meat",
       "item": "Chicken breast",
       "quantity": "2 kg",
-      "category": "Meat & fish"
+      "note": "Use with 3 existing chicken breasts; freeze any remainder after total recipe use of 2.45 kg."
     },
     {
-      "item": "Boneless skinless chicken thighs",
-      "quantity": "1.6 kg",
-      "category": "Meat & fish"
+      "category": "Meat",
+      "item": "Turkey mince",
+      "quantity": "At least 650 g",
+      "note": "Buy nearest realistic pack size; freeze excess."
     },
     {
-      "item": "Beef mince",
-      "quantity": "1.6 kg",
-      "category": "Meat & fish"
+      "category": "Meat",
+      "item": "Lamb mince",
+      "quantity": "At least 650 g",
+      "note": "Buy nearest realistic pack size; freeze excess."
     },
     {
-      "item": "Cod fillets",
-      "quantity": "500 g",
-      "category": "Meat & fish"
+      "category": "Fruit & veg",
+      "item": "Potatoes",
+      "quantity": "1 kg additional",
+      "note": "Use with 750 g new potatoes and existing jacket potatoes."
     },
     {
-      "item": "Baby/new potatoes",
-      "quantity": "2 kg",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Red peppers",
+      "quantity": "6 additional",
+      "note": "Opening stock 2; total recipe use 8 peppers."
     },
     {
+      "category": "Fruit & veg",
       "item": "Courgettes",
-      "quantity": "3",
-      "category": "Fruit & veg"
+      "quantity": "3 additional",
+      "note": "Opening stock 1; total recipe use 4."
     },
     {
-      "item": "Peppers",
-      "quantity": "5 mixed/red + 3 mixed (8 total)",
-      "category": "Fruit & veg"
-    },
-    {
-      "item": "Red onions",
-      "quantity": "4",
-      "category": "Fruit & veg"
-    },
-    {
+      "category": "Fruit & veg",
       "item": "Onions",
-      "quantity": "2",
-      "category": "Fruit & veg"
+      "quantity": "4 additional",
+      "note": "Opening stock includes 1 red onion; total recipe use 5 onions."
     },
     {
-      "item": "Carrots",
-      "quantity": "6",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Fresh tomatoes",
+      "quantity": "500 g",
+      "note": "Use with 4 existing vine tomatoes across Monday, Tuesday and Saturday."
     },
     {
+      "category": "Fruit & veg",
       "item": "Broccoli",
-      "quantity": "1 large head",
-      "category": "Fruit & veg"
+      "quantity": "1 head (~300 g)"
     },
     {
-      "item": "Green beans",
-      "quantity": "500 g",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Mangetout or green beans",
+      "quantity": "1 pack (~200 g)"
     },
     {
-      "item": "Baby spinach",
-      "quantity": "200 g",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Spinach",
+      "quantity": "300 g"
     },
     {
-      "item": "Cucumber",
-      "quantity": "1",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Avocado",
+      "quantity": "1"
     },
     {
-      "item": "Tomatoes",
-      "quantity": "2",
-      "category": "Fruit & veg"
+      "category": "Fruit & veg",
+      "item": "Lemon",
+      "quantity": "1 additional",
+      "note": "Opening stock 2; total recipe use 3."
     },
     {
-      "item": "Cherry tomatoes",
-      "quantity": "300 g",
-      "category": "Fruit & veg"
-    },
-    {
-      "item": "Little gem lettuce",
-      "quantity": "1",
-      "category": "Fruit & veg"
-    },
-    {
-      "item": "Avocados",
-      "quantity": "2",
-      "category": "Fruit & veg"
-    },
-    {
-      "item": "Lemons",
-      "quantity": "8",
-      "category": "Fruit & veg"
-    },
-    {
+      "category": "Fruit & veg",
       "item": "Limes",
-      "quantity": "6",
-      "category": "Fruit & veg"
+      "quantity": "2"
     },
     {
-      "item": "Garlic",
-      "quantity": "3 bulbs",
-      "category": "Fruit & veg"
-    },
-    {
+      "category": "Fruit & veg",
       "item": "Fresh ginger",
-      "quantity": "1 small piece (~50 g)",
-      "category": "Fruit & veg"
+      "quantity": "1 piece"
     },
     {
-      "item": "Fresh parsley",
-      "quantity": "100 g / 3 small packs",
-      "category": "Fruit & veg"
-    },
-    {
+      "category": "Fruit & veg",
       "item": "Fresh coriander",
-      "quantity": "1 small pack (~30 g)",
-      "category": "Fruit & veg"
+      "quantity": "1 large bunch"
     },
     {
-      "item": "Couscous",
-      "quantity": "1 kg",
-      "category": "Cupboard"
+      "category": "Fruit & veg",
+      "item": "Bananas",
+      "quantity": "1 bunch"
     },
     {
-      "item": "Orzo",
-      "quantity": "500 g",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Basmati rice",
-      "quantity": "500 g",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Flatbreads",
-      "quantity": "1 pack (at least 3)",
-      "category": "Bakery"
-    },
-    {
-      "item": "Large flour tortillas",
-      "quantity": "1 pack of 8",
-      "category": "Bakery"
-    },
-    {
-      "item": "Hummus",
-      "quantity": "200 g tub",
-      "category": "Chilled"
-    },
-    {
-      "item": "Greek yoghurt",
-      "quantity": "500 g tub",
-      "category": "Chilled"
-    },
-    {
+      "category": "Dairy",
       "item": "Feta",
-      "quantity": "200 g",
-      "category": "Chilled"
+      "quantity": "1 x 200 g block"
     },
     {
-      "item": "Frozen edamame",
-      "quantity": "500 g",
-      "category": "Frozen"
+      "category": "Dairy",
+      "item": "Whole milk",
+      "quantity": "6 pints"
     },
     {
-      "item": "Chickpeas",
-      "quantity": "1 × 400 g can",
-      "category": "Cupboard"
+      "category": "Dairy",
+      "item": "Cheddar cheese",
+      "quantity": "1 block (~400 g)"
     },
     {
-      "item": "Black beans",
-      "quantity": "1 × 400 g can",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Passata",
-      "quantity": "700 g",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Chopped tomatoes",
-      "quantity": "1 × 400 g can",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Dried apricots",
-      "quantity": "200 g",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Olives",
-      "quantity": "1 jar (~200 g)",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Capers",
-      "quantity": "1 small jar",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Harissa paste",
-      "quantity": "1 small jar",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Dijon mustard",
-      "quantity": "1 small jar",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Reduced-salt soy sauce",
-      "quantity": "1 bottle",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Honey",
-      "quantity": "1 small jar",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Sesame oil",
-      "quantity": "1 small bottle",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Sesame seeds",
-      "quantity": "1 small pack",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Cornflour",
-      "quantity": "1 small pack",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Olive oil",
-      "quantity": "1 bottle (≥500 ml)",
-      "category": "Cupboard"
-    },
-    {
-      "item": "Dried oregano",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Ground cumin",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Ground coriander",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Ground ginger",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Ground cinnamon",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Smoked paprika",
-      "quantity": "1 jar",
-      "category": "Herbs & spices"
-    },
-    {
-      "item": "Salt",
+      "category": "Bakery",
+      "item": "Large flatbreads",
       "quantity": "1 pack",
-      "category": "Cupboard"
+      "note": "Need 2 additional beyond 2 existing; freeze any pack surplus."
     },
     {
-      "item": "Black pepper",
-      "quantity": "1 pack/grinder",
-      "category": "Cupboard"
+      "category": "Bakery",
+      "item": "Medium tortillas",
+      "quantity": "1 pack (at least 8)"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Couscous",
+      "quantity": "500 g"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Rice",
+      "quantity": "500 g"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Pasta",
+      "quantity": "500 g"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Chickpeas",
+      "quantity": "1 x 400 g tin"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Chopped tomatoes",
+      "quantity": "2 x 400 g tins"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Passata",
+      "quantity": "1 x ~500 g carton"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Coconut milk",
+      "quantity": "1 x 400 ml tin"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Salsa",
+      "quantity": "1 jar"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Baked beans",
+      "quantity": "1 multipack"
+    },
+    {
+      "category": "Herbs & spices",
+      "item": "Ground cumin",
+      "quantity": "1 jar"
+    },
+    {
+      "category": "Herbs & spices",
+      "item": "Dried oregano",
+      "quantity": "1 jar"
+    },
+    {
+      "category": "Snacks & household",
+      "item": "Barney fruit snacks",
+      "quantity": "1 pack"
+    },
+    {
+      "category": "Snacks & household",
+      "item": "Dark chocolate",
+      "quantity": "1 pack"
+    },
+    {
+      "category": "Household",
+      "item": "Nappies",
+      "quantity": "1 pack"
+    },
+    {
+      "category": "Household",
+      "item": "Wet wipes",
+      "quantity": "1 pack"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-09-04T22:11:00+01:00",
-    "source": "Confirmed Weekly Food Plan",
-    "notes": "Reconciled 7-day plan for 5–11 September 2026."
+    "generatedFor": "Weekly Food Plan web app",
+    "validatedAgainst": "Weekly Food Plan v2 structure"
   }
 }
