@@ -1,1 +1,755 @@
-{"schemaVersion":"2.0.0","planId":"2026-09-21_4day_tue-fri","status":"confirmed","period":{"label":"Tuesday–Friday food plan","startDate":"2026-09-21","endDate":"2026-09-27","timezone":"Europe/London"},"household":[{"id":"marcus","name":"Marcus","type":"adult"},{"id":"bron","name":"Bron","type":"adult"},{"id":"barney","name":"Barney","type":"child"}],"days":[{"date":"2026-09-21","dayName":"Monday","mealIds":[],"notes":["Elapsed day — not included in this four-day plan."]},{"date":"2026-09-22","dayName":"Tuesday","mealIds":["tue-dinner-honey-lemon-chicken"]},{"date":"2026-09-23","dayName":"Wednesday","mealIds":["wed-lunch-honey-lemon-chicken","wed-dinner-beef-rigatoni"]},{"date":"2026-09-24","dayName":"Thursday","mealIds":["thu-lunch-beef-rigatoni","thu-dinner-sticky-pork-noodles"],"notes":["Barney eats dinner at nursery."]},{"date":"2026-09-25","dayName":"Friday","mealIds":["fri-lunch-sticky-pork-noodles","fri-dinner-ginger-coconut-chicken"]},{"date":"2026-09-26","dayName":"Saturday","mealIds":[],"notes":["No food planned — plan ends Friday."]},{"date":"2026-09-27","dayName":"Sunday","mealIds":[],"notes":["No food planned — plan ends Friday."]}],"meals":{"tue-dinner-honey-lemon-chicken":{"id":"tue-dinner-honey-lemon-chicken","date":"2026-09-22","title":"Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce","cuisine":"Mediterranean-inspired","slotLabel":"Dinner","mealMode":"cook","portions":{"adultServings":4,"childServings":1,"allocation":["Marcus Tuesday dinner","Bron Tuesday dinner","Barney Tuesday dinner","2 complete adult Wednesday lunches"]},"method":["Cook the rice and divide it across five portions.","Mix honey, mustard, zest and juice of half the lemon, crushed garlic and olive oil. Coat the chicken and cook in a hot pan until well browned and cooked through.","Wilt the spinach briefly. Chop the tomatoes, lettuce and red onion for a fresh salad.","Loosen yogurt and tahini with the remaining lemon juice and a little water.","Build every bowl with rice, chicken, spinach, salad and tahini-yogurt sauce. Box two complete adult portions before serving."],"ingredients":[{"item":"Chicken breast","quantity":600,"unit":"g"},{"item":"Dry rice","quantity":300,"unit":"g"},{"item":"Spinach","quantity":120,"unit":"g"},{"item":"Large salad tomatoes","quantity":2,"unit":"each"},{"item":"Lettuce","quantity":1,"unit":"half head"},{"item":"Red onion","quantity":0.5,"unit":"each"},{"item":"Natural yogurt","quantity":150,"unit":"g"},{"item":"Tahini","quantity":35,"unit":"g"},{"item":"Honey","quantity":2,"unit":"tbsp"},{"item":"Mustard","quantity":1,"unit":"tbsp"},{"item":"Lemon","quantity":1,"unit":"each"},{"item":"Garlic","quantity":3,"unit":"cloves"},{"item":"Olive oil","quantity":1,"unit":"tbsp"}],"flavourNote":"Brown the chicken properly so the honey caramelises; the lemon and mustard should keep the glaze sharp rather than sweet, while tahini-yogurt adds richness.","barneyNote":"Keep his chicken lightly seasoned, cut small, and serve salad components in manageable pieces.","storageNote":"Chill the two complete Wednesday lunch bowls promptly; reheat chicken, rice and spinach until piping hot and add cold salad/sauce after heating.","arrangeForLunch":{"enabled":true,"portions":2,"for":"2026-09-23","label":"2 complete adult portions for Wednesday lunch","instructions":"Reserve rice, chicken, spinach, salad and tahini-yogurt sauce for each lunch."}},"wed-lunch-honey-lemon-chicken":{"id":"wed-lunch-honey-lemon-chicken","date":"2026-09-23","title":"Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce","cuisine":"Mediterranean-inspired","slotLabel":"Lunch","mealMode":"planned_leftover","portions":{"adultServings":2,"childServings":0,"allocation":["Marcus lunch","Bron lunch"]},"method":["Reheat the rice, chicken and spinach until piping hot; add the reserved salad and tahini-yogurt sauce after heating."],"storageNote":"Prepared deliberately Tuesday night and chilled promptly.","sourceMealId":"tue-dinner-honey-lemon-chicken","arrangedFromPreviousMeal":{"sourceMealId":"tue-dinner-honey-lemon-chicken","label":"Exact complete meal prepared from previous dinner"}},"wed-dinner-beef-rigatoni":{"id":"wed-dinner-beef-rigatoni","date":"2026-09-23","title":"Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan","cuisine":"Italian","slotLabel":"Dinner","mealMode":"cook","portions":{"adultServings":4,"childServings":1,"allocation":["2 adult Wednesday dinners","Barney Wednesday dinner","2 complete adult Thursday work lunches"]},"method":["Cook the rigatoni 1–2 minutes short of the packet time.","Brown the beef mince hard in olive oil. Add diced onion, grated carrot and diced courgette; cook until softened and starting to colour.","Add garlic, both tins of chopped tomatoes and the chopped fresh tomato. Simmer uncovered for 15–20 minutes until thick and rich.","Stir through most of the basil and half the Parmesan, then combine with the rigatoni. Finish with the remaining Parmesan and basil.","Box two complete adult portions before serving."],"ingredients":[{"item":"Beef mince","quantity":500,"unit":"g"},{"item":"Dry rigatoni","quantity":400,"unit":"g"},{"item":"Chopped tomatoes","quantity":2,"unit":"400g tins"},{"item":"Courgette","quantity":1,"unit":"each"},{"item":"Carrot","quantity":1,"unit":"each"},{"item":"Large salad tomato","quantity":1,"unit":"each"},{"item":"Brown onion","quantity":1,"unit":"each"},{"item":"Garlic","quantity":4,"unit":"cloves"},{"item":"Fresh basil","quantity":1,"unit":"30g pack"},{"item":"Parmesan","quantity":100,"unit":"g"},{"item":"Olive oil","quantity":1,"unit":"tbsp"}],"flavourNote":"The key is deep browning on the beef and a properly reduced tomato sauce; Parmesan and basil provide umami and freshness rather than relying on sweetness.","barneyNote":"Remove his portion before extra salt and pepper; grate the vegetables finely and cut pasta if needed.","storageNote":"Cool and chill two complete portions promptly; reheat once until piping hot.","arrangeForLunch":{"enabled":true,"portions":2,"for":"2026-09-24","label":"2 complete adult portions for Thursday lunch","instructions":"Reserve complete portions of beef-and-vegetable rigatoni with sauce and Parmesan."}},"thu-lunch-beef-rigatoni":{"id":"thu-lunch-beef-rigatoni","date":"2026-09-24","title":"Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan","cuisine":"Italian","slotLabel":"Lunch","mealMode":"planned_leftover","portions":{"adultServings":2,"childServings":0,"allocation":["Marcus lunch","Bron lunch"]},"method":["Reheat the complete rigatoni portions until piping hot."],"storageNote":"Prepared deliberately Wednesday night and chilled promptly.","sourceMealId":"wed-dinner-beef-rigatoni","arrangedFromPreviousMeal":{"sourceMealId":"wed-dinner-beef-rigatoni","label":"Exact complete meal prepared from previous dinner"}},"thu-dinner-sticky-pork-noodles":{"id":"thu-dinner-sticky-pork-noodles","date":"2026-09-24","title":"Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion","cuisine":"East Asian-inspired","slotLabel":"Dinner","mealMode":"cook","portions":{"adultServings":4,"childServings":0,"allocation":["Marcus Thursday dinner","Bron Thursday dinner","2 complete adult Friday work lunches"]},"method":["Brown the pork mince over high heat until it develops crisp edges rather than steaming.","Add finely chopped ginger, garlic and sliced red pepper; stir-fry for 2–3 minutes.","Add the pak choi and noodles, then toss with soy sauce, honey and sesame oil until glossy and hot.","Finish with lime juice and sliced spring onion. Taste the adults' portions for soy/lime balance.","Box two complete noodle portions for Friday lunch."],"ingredients":[{"item":"Pork mince","quantity":500,"unit":"g"},{"item":"Fresh medium egg noodles","quantity":600,"unit":"g"},{"item":"Red pepper","quantity":1,"unit":"each"},{"item":"Pak choi","quantity":250,"unit":"g"},{"item":"Spring onions","quantity":1,"unit":"bunch"},{"item":"Fresh ginger","quantity":25,"unit":"g"},{"item":"Garlic","quantity":3,"unit":"cloves"},{"item":"Soy sauce","quantity":4,"unit":"tbsp"},{"item":"Honey","quantity":1,"unit":"tbsp"},{"item":"Sesame oil","quantity":2,"unit":"tsp"},{"item":"Lime","quantity":1,"unit":"each"}],"flavourNote":"The pork should be deeply browned; soy gives savoury depth, honey just enough gloss, and lime keeps the sauce bright rather than cloying.","storageNote":"Cool two complete portions quickly and refrigerate; reheat thoroughly on Friday.","arrangeForLunch":{"enabled":true,"portions":2,"for":"2026-09-25","label":"2 complete adult portions for Friday lunch","instructions":"Reserve complete portions containing pork, noodles, pak choi, pepper and spring onion."}},"fri-lunch-sticky-pork-noodles":{"id":"fri-lunch-sticky-pork-noodles","date":"2026-09-25","title":"Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion","cuisine":"East Asian-inspired","slotLabel":"Lunch","mealMode":"planned_leftover","portions":{"adultServings":2,"childServings":0,"allocation":["Marcus lunch","Bron lunch"]},"method":["Reheat the complete pork noodle portions until piping hot."],"storageNote":"Prepared deliberately Thursday night and chilled promptly.","sourceMealId":"thu-dinner-sticky-pork-noodles","arrangedFromPreviousMeal":{"sourceMealId":"thu-dinner-sticky-pork-noodles","label":"Exact complete meal prepared from previous dinner"}},"fri-dinner-ginger-coconut-chicken":{"id":"fri-dinner-ginger-coconut-chicken","date":"2026-09-25","title":"Ginger coconut chicken curry with broccoli, red pepper & rice","cuisine":"Thai-inspired","slotLabel":"Dinner","mealMode":"cook","portions":{"adultServings":2,"childServings":1,"allocation":["Marcus Friday dinner","Bron Friday dinner","Barney Friday dinner"]},"method":["Cook the rice.","Soften the onion, ginger and garlic, then add 1 tbsp curry paste and cook for 1 minute.","Add chicken, coconut milk, broccoli and red pepper. Simmer gently until the chicken is cooked and vegetables are tender.","Remove Barney's portion before increasing the adults' sauce with the remaining 2 tbsp curry paste and soy sauce.","Finish the adult curry with lime juice and serve with rice."],"ingredients":[{"item":"Chicken breast","quantity":300,"unit":"g"},{"item":"Dry rice","quantity":200,"unit":"g"},{"item":"Broccoli","quantity":300,"unit":"g"},{"item":"Red pepper","quantity":1,"unit":"each"},{"item":"Brown onion","quantity":1,"unit":"each"},{"item":"Fresh ginger","quantity":20,"unit":"g"},{"item":"Garlic","quantity":3,"unit":"cloves"},{"item":"Coconut milk","quantity":1,"unit":"400ml tin"},{"item":"Thai red curry paste","quantity":3,"unit":"tbsp"},{"item":"Soy sauce","quantity":1,"unit":"tbsp"},{"item":"Lime","quantity":1,"unit":"each"}],"flavourNote":"Frying the curry paste first and finishing with soy and lime gives the sauce depth, salt and acidity so it does not taste flat.","barneyNote":"His portion is removed before the extra curry paste and soy; cut chicken and broccoli appropriately and serve with plenty of rice.","storageNote":"Refrigerate any unserved food within 2 hours."}},"openingStock":["100 g Parmesan","about 150 g spinach","mustard","apple & ginger chutney","tahini","1 pot kimchi","1 courgette","3 large salad tomatoes","1 carrot","about half a lettuce","about 1 kg chicken breast","2 lemons","1 lime","1 large thumb fresh ginger","almost a whole bulb garlic","couscous","rice","rigatoni pasta","breadcrumbs","gravy granules","various nuts & seeds","desiccated coconut","2 x 400 g tins chopped tomatoes"],"intentionalRemainders":["About half a red onion remains after Tuesday; refrigerate for another meal.","About 350 g natural yogurt remains from a 500 g pot after Tuesday's sauce; use for breakfasts/snacks.","Approximately 100 g of the confirmed ~1 kg chicken breast remains after using 600 g Tuesday and 300 g Friday; refrigerate or freeze promptly.","Approximately 30 g of the confirmed ~150 g spinach remains after Tuesday; use promptly.","From the purchased 1 kg rice pack, use 500 g across Tuesday and Friday and retain about 500 g as cupboard stock; the pre-existing unquantified rice is left untouched.","From the purchased 500 g rigatoni pack, use 400 g Wednesday and retain about 100 g as cupboard stock; the pre-existing unquantified rigatoni is left untouched.","Apple & ginger chutney, kimchi, couscous, breadcrumbs, gravy granules, nuts/seeds and desiccated coconut remain as intentional household stock.","Any unused soy sauce, sesame oil, Thai curry paste, olive oil, salt and black pepper remain as cupboard stock."],"usefulNotes":["All dinner-derived lunches are exact complete meals and are already included in source-dinner quantities.","Tuesday chicken is deliberately scaled for two complete adult Wednesday lunches.","Wednesday dinner is deliberately scaled for two complete adult Thursday work lunches.","Thursday dinner is adults only and deliberately scaled for two complete adult Friday work lunches.","The confirmed ~1 kg chicken breast is deliberately not exhausted: 600 g Tuesday + 300 g Friday, leaving an approximate 100 g safety remainder.","Use 120 g of the confirmed ~150 g spinach Tuesday, leaving an approximate 30 g safety remainder.","Because the quantities of existing rice and rigatoni were not confirmed, recipe use is guaranteed by purchasing standard packs; existing unquantified dry stock remains untouched.","Confirmed non-recipe purchases include nappies, honey, dark chocolate, milk, orange juice, fruit for Barney, yogurt, washing-up liquid and washing detergent."],"shoppingList":[{"category":"Meat","item":"Beef mince","quantity":"1 x 500 g pack","note":"Use all Wednesday."},{"category":"Meat","item":"Pork mince","quantity":"1 x 500 g pack","note":"Use all Thursday."},{"category":"Fruit & veg","item":"Red onion","quantity":"1 loose onion","note":"Use half Tuesday; refrigerate the remainder."},{"category":"Fruit & veg","item":"Brown onions","quantity":"2 loose onions","note":"Use 1 Wednesday and 1 Friday."},{"category":"Fruit & veg","item":"Red peppers","quantity":"2","note":"Use 1 Thursday and 1 Friday."},{"category":"Fruit & veg","item":"Pak choi","quantity":"1 x ~250 g pack","note":"Use all Thursday."},{"category":"Fruit & veg","item":"Spring onions","quantity":"1 bunch","note":"Use all Thursday."},{"category":"Fruit & veg","item":"Broccoli","quantity":"1 x ~300 g head/bag","note":"Use all Friday."},{"category":"Fruit & veg","item":"Fresh basil","quantity":"1 x ~30 g pack","note":"Use all Wednesday."},{"category":"Fruit & veg","item":"Lime","quantity":"1","note":"Use Thursday; existing lime is reserved for Friday."},{"category":"Fruit & veg","item":"Garlic","quantity":"1 bulb","note":"Existing almost-full bulb plus this covers 13 cloves across the week."},{"category":"Dairy","item":"Natural yogurt","quantity":"1 x 500 g pot","note":"Use 150 g Tuesday; about 350 g remains for breakfasts/snacks."},{"category":"Cupboard","item":"White rice","quantity":"1 x 1 kg pack","note":"Use 300 g Tuesday + 200 g Friday; about 500 g remains. Existing rice quantity is unconfirmed and is not relied on."},{"category":"Cupboard","item":"Rigatoni","quantity":"1 x 500 g pack","note":"Use 400 g Wednesday; about 100 g remains. Existing rigatoni quantity is unconfirmed and is not relied on."},{"category":"Cupboard","item":"Fresh medium egg noodles","quantity":"2 x 300 g packs","note":"Use all 600 g Thursday."},{"category":"Cupboard","item":"Coconut milk","quantity":"1 x 400 ml tin","note":"Use all Friday."},{"category":"Cupboard","item":"Thai red curry paste","quantity":"1 jar","note":"Use 3 tbsp Friday; remainder stays as cupboard stock."},{"category":"Cupboard","item":"Soy sauce","quantity":"1 bottle","note":"Use 4 tbsp Thursday and 1 tbsp Friday."},{"category":"Cupboard","item":"Sesame oil","quantity":"1 small bottle","note":"Use 2 tsp Thursday; remainder stays as cupboard stock."},{"category":"Cupboard","item":"Olive oil","quantity":"1 bottle","note":"Current stock not confirmed; use Tuesday and Wednesday."},{"category":"Seasoning","item":"Salt","quantity":"1 pack","note":"Current stock not confirmed; use sparingly for Barney."},{"category":"Seasoning","item":"Black pepper","quantity":"1 pack","note":"Current stock not confirmed."},{"category":"Breakfast & snacks","item":"Honey","quantity":"1 jar","note":"Confirmed need; 3 tbsp also used across Tuesday/Thursday."},{"category":"Breakfast & snacks","item":"Dark chocolate","quantity":"1 pack","note":"Confirmed need."},{"category":"Breakfast & snacks","item":"Whole milk","quantity":"1 x 4 pint bottle","note":"Confirmed need."},{"category":"Breakfast & snacks","item":"Orange juice","quantity":"1 x 1 litre carton","note":"Confirmed need."},{"category":"Breakfast & snacks","item":"Fruit for Barney","quantity":"1 bunch bananas + 1 punnet soft fruit","note":"Confirmed need; enough for Tuesday–Friday."},{"category":"Baby","item":"Nappies","quantity":"1 pack","note":"Confirmed need."},{"category":"Household","item":"Washing-up liquid","quantity":"1 bottle","note":"Confirmed need."},{"category":"Household","item":"Washing detergent","quantity":"1 pack/bottle","note":"Confirmed need."}],"metadata":{"generatedFor":"Weekly Food Plan web app","validatedAgainst":"schema/weekly-food-plan.schema.json blob 90a6dda19f8ec952b6c48601bd724563ab585c88","generatedAt":"2026-09-22T08:04:00+01:00","reconciliationNote":"Final QA uses safety margins for approximate chicken/spinach stock and does not rely on unquantified rice or rigatoni opening stock."}}
+{
+  "schemaVersion": "2.0.0",
+  "planId": "2026-09-21_sunday-addition_2026-09-27",
+  "status": "confirmed",
+  "period": {
+    "label": "Sunday 27 September meals",
+    "startDate": "2026-09-21",
+    "endDate": "2026-09-27",
+    "timezone": "Europe/London"
+  },
+  "household": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "type": "adult"
+    },
+    {
+      "id": "bron",
+      "name": "Bron",
+      "type": "adult"
+    },
+    {
+      "id": "barney",
+      "name": "Barney",
+      "type": "child"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-21",
+      "dayName": "Monday",
+      "mealIds": [],
+      "notes": [
+        "Elapsed day — not included in this four-day plan."
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "dayName": "Tuesday",
+      "mealIds": [
+        "tue-dinner-honey-lemon-chicken"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "dayName": "Wednesday",
+      "mealIds": [
+        "wed-lunch-honey-lemon-chicken",
+        "wed-dinner-beef-rigatoni"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "dayName": "Thursday",
+      "mealIds": [
+        "thu-lunch-beef-rigatoni",
+        "thu-dinner-sticky-pork-noodles"
+      ],
+      "notes": [
+        "Barney eats dinner at nursery."
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "dayName": "Friday",
+      "mealIds": [
+        "fri-lunch-sticky-pork-noodles",
+        "fri-dinner-ginger-coconut-chicken"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "dayName": "Saturday",
+      "mealIds": [],
+      "notes": [
+        "No food planned — plan ends Friday."
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "dayName": "Sunday",
+      "mealIds": [
+        "sun-lunch-jacket-beans-cheddar",
+        "sun-dinner-roast-chicken"
+      ],
+      "notes": [
+        "Sunday standalone lunch and roast dinner. Today's shopping list covers only these meals."
+      ]
+    }
+  ],
+  "meals": {
+    "tue-dinner-honey-lemon-chicken": {
+      "id": "tue-dinner-honey-lemon-chicken",
+      "date": "2026-09-22",
+      "title": "Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce",
+      "cuisine": "Mediterranean-inspired",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "Marcus Tuesday dinner",
+          "Bron Tuesday dinner",
+          "Barney Tuesday dinner",
+          "2 complete adult Wednesday lunches"
+        ]
+      },
+      "method": [
+        "Cook the rice and divide it across five portions.",
+        "Mix honey, mustard, zest and juice of half the lemon, crushed garlic and olive oil. Coat the chicken and cook in a hot pan until well browned and cooked through.",
+        "Wilt the spinach briefly. Chop the tomatoes, lettuce and red onion for a fresh salad.",
+        "Loosen yogurt and tahini with the remaining lemon juice and a little water.",
+        "Build every bowl with rice, chicken, spinach, salad and tahini-yogurt sauce. Box two complete adult portions before serving."
+      ],
+      "ingredients": [
+        {
+          "item": "Chicken breast",
+          "quantity": 600,
+          "unit": "g"
+        },
+        {
+          "item": "Dry rice",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "item": "Spinach",
+          "quantity": 120,
+          "unit": "g"
+        },
+        {
+          "item": "Large salad tomatoes",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "item": "Lettuce",
+          "quantity": 1,
+          "unit": "half head"
+        },
+        {
+          "item": "Red onion",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "item": "Natural yogurt",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "item": "Tahini",
+          "quantity": 35,
+          "unit": "g"
+        },
+        {
+          "item": "Honey",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Mustard",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "flavourNote": "Brown the chicken properly so the honey caramelises; the lemon and mustard should keep the glaze sharp rather than sweet, while tahini-yogurt adds richness.",
+      "barneyNote": "Keep his chicken lightly seasoned, cut small, and serve salad components in manageable pieces.",
+      "storageNote": "Chill the two complete Wednesday lunch bowls promptly; reheat chicken, rice and spinach until piping hot and add cold salad/sauce after heating.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-23",
+        "label": "2 complete adult portions for Wednesday lunch",
+        "instructions": "Reserve rice, chicken, spinach, salad and tahini-yogurt sauce for each lunch."
+      }
+    },
+    "wed-lunch-honey-lemon-chicken": {
+      "id": "wed-lunch-honey-lemon-chicken",
+      "date": "2026-09-23",
+      "title": "Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce",
+      "cuisine": "Mediterranean-inspired",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat the rice, chicken and spinach until piping hot; add the reserved salad and tahini-yogurt sauce after heating."
+      ],
+      "storageNote": "Prepared deliberately Tuesday night and chilled promptly.",
+      "sourceMealId": "tue-dinner-honey-lemon-chicken",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "tue-dinner-honey-lemon-chicken",
+        "label": "Exact complete meal prepared from previous dinner"
+      }
+    },
+    "wed-dinner-beef-rigatoni": {
+      "id": "wed-dinner-beef-rigatoni",
+      "date": "2026-09-23",
+      "title": "Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan",
+      "cuisine": "Italian",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 1,
+        "allocation": [
+          "2 adult Wednesday dinners",
+          "Barney Wednesday dinner",
+          "2 complete adult Thursday work lunches"
+        ]
+      },
+      "method": [
+        "Cook the rigatoni 1–2 minutes short of the packet time.",
+        "Brown the beef mince hard in olive oil. Add diced onion, grated carrot and diced courgette; cook until softened and starting to colour.",
+        "Add garlic, both tins of chopped tomatoes and the chopped fresh tomato. Simmer uncovered for 15–20 minutes until thick and rich.",
+        "Stir through most of the basil and half the Parmesan, then combine with the rigatoni. Finish with the remaining Parmesan and basil.",
+        "Box two complete adult portions before serving."
+      ],
+      "ingredients": [
+        {
+          "item": "Beef mince",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Dry rigatoni",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "item": "Chopped tomatoes",
+          "quantity": 2,
+          "unit": "400g tins"
+        },
+        {
+          "item": "Courgette",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Carrot",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Large salad tomato",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 4,
+          "unit": "cloves"
+        },
+        {
+          "item": "Fresh basil",
+          "quantity": 1,
+          "unit": "30g pack"
+        },
+        {
+          "item": "Parmesan",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "item": "Olive oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "flavourNote": "The key is deep browning on the beef and a properly reduced tomato sauce; Parmesan and basil provide umami and freshness rather than relying on sweetness.",
+      "barneyNote": "Remove his portion before extra salt and pepper; grate the vegetables finely and cut pasta if needed.",
+      "storageNote": "Cool and chill two complete portions promptly; reheat once until piping hot.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-24",
+        "label": "2 complete adult portions for Thursday lunch",
+        "instructions": "Reserve complete portions of beef-and-vegetable rigatoni with sauce and Parmesan."
+      }
+    },
+    "thu-lunch-beef-rigatoni": {
+      "id": "thu-lunch-beef-rigatoni",
+      "date": "2026-09-24",
+      "title": "Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan",
+      "cuisine": "Italian",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat the complete rigatoni portions until piping hot."
+      ],
+      "storageNote": "Prepared deliberately Wednesday night and chilled promptly.",
+      "sourceMealId": "wed-dinner-beef-rigatoni",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "wed-dinner-beef-rigatoni",
+        "label": "Exact complete meal prepared from previous dinner"
+      }
+    },
+    "thu-dinner-sticky-pork-noodles": {
+      "id": "thu-dinner-sticky-pork-noodles",
+      "date": "2026-09-24",
+      "title": "Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion",
+      "cuisine": "East Asian-inspired",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 4,
+        "childServings": 0,
+        "allocation": [
+          "Marcus Thursday dinner",
+          "Bron Thursday dinner",
+          "2 complete adult Friday work lunches"
+        ]
+      },
+      "method": [
+        "Brown the pork mince over high heat until it develops crisp edges rather than steaming.",
+        "Add finely chopped ginger, garlic and sliced red pepper; stir-fry for 2–3 minutes.",
+        "Add the pak choi and noodles, then toss with soy sauce, honey and sesame oil until glossy and hot.",
+        "Finish with lime juice and sliced spring onion. Taste the adults' portions for soy/lime balance.",
+        "Box two complete noodle portions for Friday lunch."
+      ],
+      "ingredients": [
+        {
+          "item": "Pork mince",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Fresh medium egg noodles",
+          "quantity": 600,
+          "unit": "g"
+        },
+        {
+          "item": "Red pepper",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Pak choi",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "item": "Spring onions",
+          "quantity": 1,
+          "unit": "bunch"
+        },
+        {
+          "item": "Fresh ginger",
+          "quantity": 25,
+          "unit": "g"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Soy sauce",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Honey",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Sesame oil",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "Lime",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "flavourNote": "The pork should be deeply browned; soy gives savoury depth, honey just enough gloss, and lime keeps the sauce bright rather than cloying.",
+      "storageNote": "Cool two complete portions quickly and refrigerate; reheat thoroughly on Friday.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-25",
+        "label": "2 complete adult portions for Friday lunch",
+        "instructions": "Reserve complete portions containing pork, noodles, pak choi, pepper and spring onion."
+      }
+    },
+    "fri-lunch-sticky-pork-noodles": {
+      "id": "fri-lunch-sticky-pork-noodles",
+      "date": "2026-09-25",
+      "title": "Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion",
+      "cuisine": "East Asian-inspired",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 0,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch"
+        ]
+      },
+      "method": [
+        "Reheat the complete pork noodle portions until piping hot."
+      ],
+      "storageNote": "Prepared deliberately Thursday night and chilled promptly.",
+      "sourceMealId": "thu-dinner-sticky-pork-noodles",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "thu-dinner-sticky-pork-noodles",
+        "label": "Exact complete meal prepared from previous dinner"
+      }
+    },
+    "fri-dinner-ginger-coconut-chicken": {
+      "id": "fri-dinner-ginger-coconut-chicken",
+      "date": "2026-09-25",
+      "title": "Ginger coconut chicken curry with broccoli, red pepper & rice",
+      "cuisine": "Thai-inspired",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "Marcus Friday dinner",
+          "Bron Friday dinner",
+          "Barney Friday dinner"
+        ]
+      },
+      "method": [
+        "Cook the rice.",
+        "Soften the onion, ginger and garlic, then add 1 tbsp curry paste and cook for 1 minute.",
+        "Add chicken, coconut milk, broccoli and red pepper. Simmer gently until the chicken is cooked and vegetables are tender.",
+        "Remove Barney's portion before increasing the adults' sauce with the remaining 2 tbsp curry paste and soy sauce.",
+        "Finish the adult curry with lime juice and serve with rice."
+      ],
+      "ingredients": [
+        {
+          "item": "Chicken breast",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "item": "Dry rice",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "item": "Red pepper",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Brown onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "item": "Fresh ginger",
+          "quantity": 20,
+          "unit": "g"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Coconut milk",
+          "quantity": 1,
+          "unit": "400ml tin"
+        },
+        {
+          "item": "Thai red curry paste",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Soy sauce",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Lime",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "flavourNote": "Frying the curry paste first and finishing with soy and lime gives the sauce depth, salt and acidity so it does not taste flat.",
+      "barneyNote": "His portion is removed before the extra curry paste and soy; cut chicken and broccoli appropriately and serve with plenty of rice.",
+      "storageNote": "Refrigerate any unserved food within 2 hours."
+    },
+    "sun-lunch-jacket-beans-cheddar": {
+      "id": "sun-lunch-jacket-beans-cheddar",
+      "date": "2026-09-27",
+      "title": "Jacket potatoes with baked beans and mature cheddar",
+      "cuisine": "Comfort",
+      "slotLabel": "Lunch",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "Marcus lunch",
+          "Bron lunch",
+          "Barney lunch"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Jacket potatoes",
+          "quantity": 3,
+          "unit": "each (2 large, 1 small; about 750 g total)"
+        },
+        {
+          "item": "Baked beans",
+          "quantity": 1,
+          "unit": "400 g tin"
+        },
+        {
+          "item": "Mature cheddar",
+          "quantity": 120,
+          "unit": "g"
+        }
+      ],
+      "method": [
+        "Prick potatoes and bake at 200°C fan for 55–75 minutes, until soft inside and crisp outside; the smaller potato may finish first.",
+        "Heat the entire tin of beans thoroughly. Split potatoes, spoon over beans and top with 120 g grated cheddar."
+      ],
+      "flavourNote": "Season the adults' potatoes to taste; the mature cheddar adds savoury depth.",
+      "barneyNote": "Serve the small potato, beans and a modest share of the cheese at a safe temperature; cut to manageable pieces. Avoid added salt.",
+      "storageNote": "Refrigerate any uneaten cooked potato or beans promptly; the planned meal uses the full tin."
+    },
+    "sun-dinner-roast-chicken": {
+      "id": "sun-dinner-roast-chicken",
+      "date": "2026-09-27",
+      "title": "Roast chicken with potatoes, honey parsnips, carrot and swede mash, broccoli and gravy",
+      "cuisine": "British roast",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "adultServings": 2,
+        "childServings": 1,
+        "allocation": [
+          "Marcus dinner",
+          "Bron dinner",
+          "Barney dinner; chicken remaining from whole bird is intentional"
+        ]
+      },
+      "ingredients": [
+        {
+          "item": "Whole chicken",
+          "quantity": 1,
+          "unit": "1.6–1.8 kg bird"
+        },
+        {
+          "item": "Roast potatoes",
+          "quantity": 750,
+          "unit": "g (confirmed already have)"
+        },
+        {
+          "item": "Parsnips",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Carrots",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Swede/turnip",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Broccoli",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "item": "Honey",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Oil",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Butter",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "item": "Gravy granules",
+          "quantity": 30,
+          "unit": "g (use enough for about 300 ml gravy)"
+        },
+        {
+          "item": "Salt and black pepper",
+          "quantity": 1,
+          "unit": "to taste"
+        }
+      ],
+      "method": [
+        "Heat oven to 200°C fan. Pat chicken dry, rub with 1 tbsp oil and season the skin. Roast according to the bird's pack instructions until thoroughly cooked (75°C in the thickest part, away from bone); rest 15–20 minutes before carving.",
+        "Parboil 750 g potatoes for 8–10 minutes, drain and rough up. Roast in 1 tbsp oil until golden and crisp, usually 45–55 minutes.",
+        "Peel and cut 500 g parsnips into even batons. Toss with 1 tbsp oil; roast 30–40 minutes. Toss with 2 tbsp honey for the final 8–10 minutes so the glaze caramelises without burning.",
+        "Peel and dice 500 g carrots and 500 g swede. Boil until tender, drain well and mash with 30 g butter; season the adults' servings after taking Barney's.",
+        "Steam 400 g broccoli until just tender. Make about 300 ml gravy with the granules, following the pack dilution. Carve the chicken and serve each plate with all sides and gravy."
+      ],
+      "flavourNote": "Crisp chicken skin and potatoes balance sweet parsnips and mash; keep broccoli bright and gravy savoury. Use a little chicken roasting juice in adult gravy if desired.",
+      "barneyNote": "Offer boneless, well-cooked chicken and soft vegetables in manageable pieces. Give a smaller portion of honey glaze and low-salt gravy, and season adult plates separately.",
+      "storageNote": "The whole bird exceeds three dinner portions. Cool extra cooked chicken promptly, refrigerate within 2 hours for up to 2 days or freeze; it is an intentional remainder, not a planned lunch."
+    }
+  },
+  "openingStock": [
+    "Roast potatoes: about 750 g confirmed for Sunday",
+    "Gravy granules: confirmed in previous stock check; use about 30 g if still available"
+  ],
+  "intentionalRemainders": [
+    "About 130 g cheddar remains from the 250 g block; refrigerate.",
+    "Extra cooked chicken remains from a 1.6–1.8 kg whole bird; refrigerate promptly for up to two days or freeze.",
+    "If jacket potatoes or swede are bought in a larger pack, retain any excess as household stock.",
+    "Any honey, butter or oil bought because home stock is low remains household stock."
+  ],
+  "usefulNotes": [
+    "Sunday's shopping list is for today's two meals only; earlier meals and their purchases are historical.",
+    "Roast potatoes are confirmed as already available. Check remaining gravy granules before cooking.",
+    "Honey, butter, oil and seasoning are conditional purchases; check home stock before shopping."
+  ],
+  "shoppingList": [
+    {
+      "category": "Meat",
+      "item": "Whole chicken",
+      "quantity": "1 bird, 1.6–1.8 kg",
+      "note": "Roast dinner; extra cooked chicken intentionally refrigerated or frozen."
+    },
+    {
+      "category": "Fruit & veg",
+      "item": "Jacket potatoes",
+      "quantity": "2 large + 1 small (about 750 g total; buy loose or nearest pack)",
+      "note": "Sunday lunch. Any extra pack potatoes remain cupboard stock."
+    },
+    {
+      "category": "Cupboard",
+      "item": "Baked beans",
+      "quantity": "1 × 400 g tin",
+      "note": "Use whole tin at lunch."
+    },
+    {
+      "category": "Dairy",
+      "item": "Mature cheddar",
+      "quantity": "1 × 250 g block",
+      "note": "Use 120 g at lunch; refrigerate remaining about 130 g."
+    },
+    {
+      "category": "Fruit & veg",
+      "item": "Parsnips",
+      "quantity": "about 500 g",
+      "note": "Use all at dinner."
+    },
+    {
+      "category": "Fruit & veg",
+      "item": "Carrots",
+      "quantity": "about 500 g",
+      "note": "Use all at dinner."
+    },
+    {
+      "category": "Fruit & veg",
+      "item": "Swede/turnip",
+      "quantity": "1 small, about 500 g usable",
+      "note": "Use in mash; any excess from a larger swede can be refrigerated."
+    },
+    {
+      "category": "Fruit & veg",
+      "item": "Broccoli",
+      "quantity": "1 large head, about 400 g",
+      "note": "Use at dinner."
+    },
+    {
+      "category": "Cupboard",
+      "item": "Honey",
+      "quantity": "1 jar if needed",
+      "note": "Use 2 tbsp for parsnips; check cupboard before buying."
+    },
+    {
+      "category": "Dairy",
+      "item": "Butter",
+      "quantity": "1 pack if needed",
+      "note": "Use 30 g in mash; check fridge before buying."
+    },
+    {
+      "category": "Cupboard",
+      "item": "Oil",
+      "quantity": "1 bottle if needed",
+      "note": "Use 3 tbsp; check cupboard before buying."
+    },
+    {
+      "category": "Seasoning",
+      "item": "Salt and black pepper",
+      "quantity": "if needed",
+      "note": "Season adults' portions; check cupboard before buying."
+    }
+  ],
+  "metadata": {
+    "generatedFor": "Weekly Food Plan web app",
+    "generatedAt": "2026-09-27T11:10:01.937409+01:00",
+    "validatedAgainst": "schema/weekly-food-plan.schema.json current GitHub blob 90a6dda19f8ec952b6c48601bd724563ab585c88",
+    "reconciliationNote": "Sunday lunch and dinner quantities include two adults and one child; prior days remain historical and are excluded from today's shopping list."
+  }
+}
