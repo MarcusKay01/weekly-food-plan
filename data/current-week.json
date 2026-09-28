@@ -1,755 +1,849 @@
 {
-  "schemaVersion": "2.0.0",
-  "planId": "2026-09-21_sunday-addition_2026-09-27",
+  "schemaVersion": "2.0",
+  "planId": "2026-09-28-weekly-food-plan",
   "status": "confirmed",
   "period": {
-    "label": "Sunday 27 September meals",
-    "startDate": "2026-09-21",
-    "endDate": "2026-09-27",
+    "label": "28 Sep – 4 Oct 2026",
+    "startDate": "2026-09-28",
+    "endDate": "2026-10-04",
     "timezone": "Europe/London"
   },
   "household": [
-    {
-      "id": "marcus",
-      "name": "Marcus",
-      "type": "adult"
-    },
-    {
-      "id": "bron",
-      "name": "Bron",
-      "type": "adult"
-    },
-    {
-      "id": "barney",
-      "name": "Barney",
-      "type": "child"
-    }
+    "Marcus",
+    "Bron",
+    "Barney"
+  ],
+  "openingStock": [
+    "Mustard",
+    "Jalapeños",
+    "Kimchi",
+    "5 baby tomatoes",
+    "1/2 large lettuce",
+    "1/2 bag tenderstem broccoli",
+    "1 very large red onion",
+    "<1/4 block feta",
+    "2 lemons",
+    "Ginger",
+    "1 garlic bulb",
+    "Tomato purée",
+    "Tahini",
+    "Couscous",
+    "2 tins baked beans",
+    "Gravy granules",
+    "Breadcrumbs",
+    "Desiccated coconut",
+    "Sesame seeds",
+    "Walnuts",
+    "Mixed nuts",
+    "Almonds",
+    "Dried apricots",
+    "Raisins",
+    "Peanuts",
+    "Pecans",
+    "Cranberries"
+  ],
+  "intentionalRemainders": [
+    "Any unused dry spices/condiments remain as cupboard stock.",
+    "Unused pumpkin/sunflower seeds, coffee and dark chocolate remain for breakfasts/snacks.",
+    "Any unused nappies, paracetamol and Method spray remain as household stock."
+  ],
+  "usefulNotes": [
+    "Dinner-derived lunches are identical complete portions of the source dinner.",
+    "Wednesday dinner includes 2 adult portions for Thursday work lunches.",
+    "Thursday dinner is adults only because Barney eats at nursery and includes 2 adult portions for Friday work lunches.",
+    "Protein quantities have been deliberately scaled to avoid undersized adult portions."
   ],
   "days": [
     {
-      "date": "2026-09-21",
+      "date": "2026-09-28",
       "dayName": "Monday",
-      "mealIds": [],
-      "notes": [
-        "Elapsed day — not included in this four-day plan."
+      "mealIds": [
+        "mon-lunch",
+        "mon-dinner"
       ]
     },
     {
-      "date": "2026-09-22",
+      "date": "2026-09-29",
       "dayName": "Tuesday",
       "mealIds": [
-        "tue-dinner-honey-lemon-chicken"
+        "tue-lunch",
+        "tue-dinner"
       ]
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-30",
       "dayName": "Wednesday",
       "mealIds": [
-        "wed-lunch-honey-lemon-chicken",
-        "wed-dinner-beef-rigatoni"
+        "wed-lunch",
+        "wed-dinner"
       ]
     },
     {
-      "date": "2026-09-24",
+      "date": "2026-10-01",
       "dayName": "Thursday",
       "mealIds": [
-        "thu-lunch-beef-rigatoni",
-        "thu-dinner-sticky-pork-noodles"
-      ],
-      "notes": [
-        "Barney eats dinner at nursery."
+        "thu-lunch",
+        "thu-dinner"
       ]
     },
     {
-      "date": "2026-09-25",
+      "date": "2026-10-02",
       "dayName": "Friday",
       "mealIds": [
-        "fri-lunch-sticky-pork-noodles",
-        "fri-dinner-ginger-coconut-chicken"
+        "fri-lunch",
+        "fri-dinner"
       ]
     },
     {
-      "date": "2026-09-26",
+      "date": "2026-10-03",
       "dayName": "Saturday",
-      "mealIds": [],
-      "notes": [
-        "No food planned — plan ends Friday."
+      "mealIds": [
+        "sat-lunch",
+        "sat-dinner"
       ]
     },
     {
-      "date": "2026-09-27",
+      "date": "2026-10-04",
       "dayName": "Sunday",
       "mealIds": [
-        "sun-lunch-jacket-beans-cheddar",
-        "sun-dinner-roast-chicken"
-      ],
-      "notes": [
-        "Sunday standalone lunch and roast dinner. Today's shopping list covers only these meals."
+        "sun-lunch",
+        "sun-dinner"
       ]
     }
   ],
   "meals": {
-    "tue-dinner-honey-lemon-chicken": {
-      "id": "tue-dinner-honey-lemon-chicken",
-      "date": "2026-09-22",
-      "title": "Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce",
-      "cuisine": "Mediterranean-inspired",
+    "mon-lunch": {
+      "id": "mon-lunch",
+      "date": "2026-09-28",
+      "title": "Jacket potato with baked beans, feta & salad",
+      "slotLabel": "Lunch",
+      "mealMode": "standalone",
+      "portions": {
+        "total": 3,
+        "allocation": "2 adults + Barney"
+      },
+      "method": [
+        "Bake potatoes until crisp and fluffy.",
+        "Heat beans thoroughly.",
+        "Split potatoes, top with beans and feta; serve lettuce and tomatoes alongside."
+      ],
+      "cuisine": "British",
+      "ingredients": [
+        "3 medium baking potatoes (about 750g)",
+        "1 x 400g tin baked beans (stock)",
+        "remaining feta, crumbled (stock)",
+        "1/2 lettuce (stock)",
+        "5 baby tomatoes (stock)"
+      ],
+      "flavourNote": "Season the potato well; feta adds salt and tang.",
+      "barneyNote": "Serve Barney a smaller potato portion; chop salad appropriately."
+    },
+    "mon-dinner": {
+      "id": "mon-dinner",
+      "date": "2026-09-28",
+      "title": "Lemon, garlic & feta chicken traybake with couscous and tenderstem broccoli",
       "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 4,
-        "childServings": 1,
-        "allocation": [
-          "Marcus Tuesday dinner",
-          "Bron Tuesday dinner",
-          "Barney Tuesday dinner",
-          "2 complete adult Wednesday lunches"
-        ]
+        "totalAdultEquivalent": 4.5,
+        "allocation": "Marcus + Bron + Barney dinner; 2 complete adult portions for Tuesday lunch"
       },
       "method": [
-        "Cook the rice and divide it across five portions.",
-        "Mix honey, mustard, zest and juice of half the lemon, crushed garlic and olive oil. Coat the chicken and cook in a hot pan until well browned and cooked through.",
-        "Wilt the spinach briefly. Chop the tomatoes, lettuce and red onion for a fresh salad.",
-        "Loosen yogurt and tahini with the remaining lemon juice and a little water.",
-        "Build every bowl with rice, chicken, spinach, salad and tahini-yogurt sauce. Box two complete adult portions before serving."
+        "Heat oven to 210C/190C fan.",
+        "Toss chicken with lemon zest/juice, garlic, oregano, olive oil, salt and pepper; roast until cooked through.",
+        "Add tenderstem for the final 12–15 minutes.",
+        "Prepare couscous with hot stock/water; fluff well.",
+        "Serve every portion with chicken, couscous and broccoli; divide two complete portions into lunch containers."
       ],
+      "cuisine": "Mediterranean",
       "ingredients": [
-        {
-          "item": "Chicken breast",
-          "quantity": 600,
-          "unit": "g"
-        },
-        {
-          "item": "Dry rice",
-          "quantity": 300,
-          "unit": "g"
-        },
-        {
-          "item": "Spinach",
-          "quantity": 120,
-          "unit": "g"
-        },
-        {
-          "item": "Large salad tomatoes",
-          "quantity": 2,
-          "unit": "each"
-        },
-        {
-          "item": "Lettuce",
-          "quantity": 1,
-          "unit": "half head"
-        },
-        {
-          "item": "Red onion",
-          "quantity": 0.5,
-          "unit": "each"
-        },
-        {
-          "item": "Natural yogurt",
-          "quantity": 150,
-          "unit": "g"
-        },
-        {
-          "item": "Tahini",
-          "quantity": 35,
-          "unit": "g"
-        },
-        {
-          "item": "Honey",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Mustard",
-          "quantity": 1,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Lemon",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 3,
-          "unit": "cloves"
-        },
-        {
-          "item": "Olive oil",
-          "quantity": 1,
-          "unit": "tbsp"
-        }
+        "900g boneless chicken thighs/breast",
+        "300g dry couscous (stock)",
+        "1/2 bag tenderstem broccoli (stock)",
+        "1 lemon (stock)",
+        "3 garlic cloves (stock)",
+        "1 tbsp olive oil",
+        "1 tsp dried oregano",
+        "remaining feta if available after lunch"
       ],
-      "flavourNote": "Brown the chicken properly so the honey caramelises; the lemon and mustard should keep the glaze sharp rather than sweet, while tahini-yogurt adds richness.",
-      "barneyNote": "Keep his chicken lightly seasoned, cut small, and serve salad components in manageable pieces.",
-      "storageNote": "Chill the two complete Wednesday lunch bowls promptly; reheat chicken, rice and spinach until piping hot and add cold salad/sauce after heating.",
+      "flavourNote": "Use plenty of lemon, oregano, garlic and black pepper; finish with feta if any remains.",
+      "barneyNote": "Keep Barney's chicken lightly salted and cut appropriately.",
+      "storageNote": "Cool lunch portions promptly; refrigerate and reheat until piping hot.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
-        "for": "2026-09-23",
-        "label": "2 complete adult portions for Wednesday lunch",
-        "instructions": "Reserve rice, chicken, spinach, salad and tahini-yogurt sauce for each lunch."
+        "for": "2026-09-29",
+        "label": "Tuesday lunch",
+        "instructions": "Pack 2 identical complete portions: chicken, couscous and broccoli."
       }
     },
-    "wed-lunch-honey-lemon-chicken": {
-      "id": "wed-lunch-honey-lemon-chicken",
-      "date": "2026-09-23",
-      "title": "Honey, lemon & garlic chicken rice bowls with spinach, tomato, lettuce & tahini-yogurt sauce",
-      "cuisine": "Mediterranean-inspired",
+    "tue-lunch": {
+      "id": "tue-lunch",
+      "date": "2026-09-29",
+      "title": "Lemon, garlic & feta chicken traybake with couscous and tenderstem broccoli",
       "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
       "portions": {
-        "adultServings": 2,
-        "childServings": 0,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch"
-        ]
+        "total": 2,
+        "allocation": "Marcus + Bron"
       },
       "method": [
-        "Reheat the rice, chicken and spinach until piping hot; add the reserved salad and tahini-yogurt sauce after heating."
+        "Reheat the two complete portions prepared with Monday dinner until piping hot."
       ],
-      "storageNote": "Prepared deliberately Tuesday night and chilled promptly.",
-      "sourceMealId": "tue-dinner-honey-lemon-chicken",
+      "sourceMealId": "mon-dinner",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "tue-dinner-honey-lemon-chicken",
-        "label": "Exact complete meal prepared from previous dinner"
+        "sourceMealId": "mon-dinner",
+        "label": "Identical complete portion from previous dinner"
       }
     },
-    "wed-dinner-beef-rigatoni": {
-      "id": "wed-dinner-beef-rigatoni",
-      "date": "2026-09-23",
-      "title": "Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan",
+    "tue-dinner": {
+      "id": "tue-dinner",
+      "date": "2026-09-29",
+      "title": "Slow-cooker beef & apricot Moroccan tagine with couscous",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "totalAdultEquivalent": 4.5,
+        "allocation": "Marcus + Bron + Barney dinner; 2 complete adult portions for Wednesday lunch"
+      },
+      "method": [
+        "Brown beef if time allows, then add to slow cooker.",
+        "Add onions, garlic, tomato purée, tomatoes, stock, apricots and spices.",
+        "Cook LOW 7–8 hours or HIGH 4–5 hours until tender.",
+        "Taste and balance with lemon, salt and pepper; reduce uncovered briefly if too loose.",
+        "Prepare couscous and divide tagine plus couscous across dinner and two lunch portions."
+      ],
+      "cuisine": "Moroccan",
+      "ingredients": [
+        "1kg diced beef chuck",
+        "200g dried apricots (stock)",
+        "2 onions",
+        "3 garlic cloves (stock)",
+        "2 tbsp tomato purée (stock)",
+        "1 x 400g tin chopped tomatoes",
+        "400ml beef stock",
+        "2 tsp ground cumin",
+        "2 tsp ground coriander",
+        "1 tsp cinnamon",
+        "1 tsp smoked paprika",
+        "300g dry couscous (stock)",
+        "1 lemon, to finish (stock)"
+      ],
+      "flavourNote": "The finish matters: lemon should brighten the sweet apricot and rich beef; season until savoury rather than sweet.",
+      "barneyNote": "Remove Barney's portion before final heavy seasoning; ensure beef is very tender.",
+      "storageNote": "Cool two complete portions promptly; refrigerate overnight.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-09-30",
+        "label": "Wednesday lunch",
+        "instructions": "Pack 2 identical complete portions of tagine and couscous."
+      }
+    },
+    "wed-lunch": {
+      "id": "wed-lunch",
+      "date": "2026-09-30",
+      "title": "Slow-cooker beef & apricot Moroccan tagine with couscous",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "portions": {
+        "total": 2,
+        "allocation": "Marcus + Bron"
+      },
+      "method": [
+        "Reheat the complete portions until piping hot."
+      ],
+      "sourceMealId": "tue-dinner",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "tue-dinner",
+        "label": "Identical complete portion from previous dinner"
+      }
+    },
+    "wed-dinner": {
+      "id": "wed-dinner",
+      "date": "2026-09-30",
+      "title": "Creamy Tuscan-style sausage rigatoni with spinach, tomato & Parmesan",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "totalAdultEquivalent": 4.5,
+        "allocation": "Marcus + Bron + Barney dinner; 2 complete adult portions for Thursday work lunches"
+      },
+      "method": [
+        "Remove sausage meat from skins and brown deeply.",
+        "Soften onion and garlic; add fennel, oregano and tomatoes and simmer.",
+        "Cook rigatoni just shy of al dente.",
+        "Stir cream and spinach into sauce, then pasta and Parmesan; loosen with pasta water.",
+        "Divide two complete portions for Thursday before serving dinner."
+      ],
       "cuisine": "Italian",
-      "slotLabel": "Dinner",
-      "mealMode": "cook",
-      "portions": {
-        "adultServings": 4,
-        "childServings": 1,
-        "allocation": [
-          "2 adult Wednesday dinners",
-          "Barney Wednesday dinner",
-          "2 complete adult Thursday work lunches"
-        ]
-      },
-      "method": [
-        "Cook the rigatoni 1–2 minutes short of the packet time.",
-        "Brown the beef mince hard in olive oil. Add diced onion, grated carrot and diced courgette; cook until softened and starting to colour.",
-        "Add garlic, both tins of chopped tomatoes and the chopped fresh tomato. Simmer uncovered for 15–20 minutes until thick and rich.",
-        "Stir through most of the basil and half the Parmesan, then combine with the rigatoni. Finish with the remaining Parmesan and basil.",
-        "Box two complete adult portions before serving."
-      ],
       "ingredients": [
-        {
-          "item": "Beef mince",
-          "quantity": 500,
-          "unit": "g"
-        },
-        {
-          "item": "Dry rigatoni",
-          "quantity": 400,
-          "unit": "g"
-        },
-        {
-          "item": "Chopped tomatoes",
-          "quantity": 2,
-          "unit": "400g tins"
-        },
-        {
-          "item": "Courgette",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Carrot",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Large salad tomato",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Brown onion",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 4,
-          "unit": "cloves"
-        },
-        {
-          "item": "Fresh basil",
-          "quantity": 1,
-          "unit": "30g pack"
-        },
-        {
-          "item": "Parmesan",
-          "quantity": 100,
-          "unit": "g"
-        },
-        {
-          "item": "Olive oil",
-          "quantity": 1,
-          "unit": "tbsp"
-        }
+        "750g pork sausages",
+        "400g rigatoni",
+        "1 onion",
+        "3 garlic cloves",
+        "1 x 400g tin chopped tomatoes",
+        "200ml single cream",
+        "200g spinach",
+        "75g Parmesan",
+        "1 tsp fennel seeds",
+        "1 tsp dried oregano"
       ],
-      "flavourNote": "The key is deep browning on the beef and a properly reduced tomato sauce; Parmesan and basil provide umami and freshness rather than relying on sweetness.",
-      "barneyNote": "Remove his portion before extra salt and pepper; grate the vegetables finely and cut pasta if needed.",
-      "storageNote": "Cool and chill two complete portions promptly; reheat once until piping hot.",
+      "flavourNote": "Brown the sausage properly; fennel, Parmesan and black pepper provide savoury depth. Keep enough acidity from the tomatoes to prevent the cream becoming heavy.",
+      "barneyNote": "Serve Barney a smaller portion; cut pasta/sausage as needed and avoid extra salt.",
+      "storageNote": "Refrigerate lunch portions promptly; reheat thoroughly with a splash of water.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
-        "for": "2026-09-24",
-        "label": "2 complete adult portions for Thursday lunch",
-        "instructions": "Reserve complete portions of beef-and-vegetable rigatoni with sauce and Parmesan."
+        "for": "2026-10-01",
+        "label": "Thursday work lunches",
+        "instructions": "Pack 2 identical complete portions of sausage rigatoni."
       }
     },
-    "thu-lunch-beef-rigatoni": {
-      "id": "thu-lunch-beef-rigatoni",
-      "date": "2026-09-24",
-      "title": "Beef, courgette & carrot rigatoni in rich tomato-basil sauce with Parmesan",
-      "cuisine": "Italian",
+    "thu-lunch": {
+      "id": "thu-lunch",
+      "date": "2026-10-01",
+      "title": "Creamy Tuscan-style sausage rigatoni with spinach, tomato & Parmesan",
       "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
       "portions": {
-        "adultServings": 2,
-        "childServings": 0,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch"
-        ]
+        "total": 2,
+        "allocation": "Marcus + Bron work lunches"
       },
       "method": [
-        "Reheat the complete rigatoni portions until piping hot."
+        "Reheat the two complete portions until piping hot."
       ],
-      "storageNote": "Prepared deliberately Wednesday night and chilled promptly.",
-      "sourceMealId": "wed-dinner-beef-rigatoni",
+      "sourceMealId": "wed-dinner",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "wed-dinner-beef-rigatoni",
-        "label": "Exact complete meal prepared from previous dinner"
+        "sourceMealId": "wed-dinner",
+        "label": "Identical complete portion from previous dinner"
       }
     },
-    "thu-dinner-sticky-pork-noodles": {
-      "id": "thu-dinner-sticky-pork-noodles",
-      "date": "2026-09-24",
-      "title": "Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion",
-      "cuisine": "East Asian-inspired",
+    "thu-dinner": {
+      "id": "thu-dinner",
+      "date": "2026-10-01",
+      "title": "Teriyaki salmon rice bowls with cucumber, edamame & sesame",
       "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 4,
-        "childServings": 0,
-        "allocation": [
-          "Marcus Thursday dinner",
-          "Bron Thursday dinner",
-          "2 complete adult Friday work lunches"
-        ]
+        "total": 4,
+        "allocation": "Marcus + Bron dinner; 2 complete adult portions for Friday work lunches; Barney at nursery"
       },
       "method": [
-        "Brown the pork mince over high heat until it develops crisp edges rather than steaming.",
-        "Add finely chopped ginger, garlic and sliced red pepper; stir-fry for 2–3 minutes.",
-        "Add the pak choi and noodles, then toss with soy sauce, honey and sesame oil until glossy and hot.",
-        "Finish with lime juice and sliced spring onion. Taste the adults' portions for soy/lime balance.",
-        "Box two complete noodle portions for Friday lunch."
+        "Cook rice and edamame.",
+        "Mix teriyaki, soy, rice vinegar and ginger; glaze salmon and bake or pan-cook until just cooked.",
+        "Slice cucumber and spring onions.",
+        "Build four identical complete bowls with rice, salmon, edamame and cucumber; finish with sesame.",
+        "Pack two complete bowls for Friday."
       ],
+      "cuisine": "Japanese-inspired",
       "ingredients": [
-        {
-          "item": "Pork mince",
-          "quantity": 500,
-          "unit": "g"
-        },
-        {
-          "item": "Fresh medium egg noodles",
-          "quantity": 600,
-          "unit": "g"
-        },
-        {
-          "item": "Red pepper",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Pak choi",
-          "quantity": 250,
-          "unit": "g"
-        },
-        {
-          "item": "Spring onions",
-          "quantity": 1,
-          "unit": "bunch"
-        },
-        {
-          "item": "Fresh ginger",
-          "quantity": 25,
-          "unit": "g"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 3,
-          "unit": "cloves"
-        },
-        {
-          "item": "Soy sauce",
-          "quantity": 4,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Honey",
-          "quantity": 1,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Sesame oil",
-          "quantity": 2,
-          "unit": "tsp"
-        },
-        {
-          "item": "Lime",
-          "quantity": 1,
-          "unit": "each"
-        }
+        "650-700g salmon fillets",
+        "300g dry rice",
+        "300g shelled edamame",
+        "1 cucumber",
+        "4 spring onions",
+        "60ml teriyaki sauce",
+        "1 tbsp soy sauce",
+        "1 tsp rice vinegar",
+        "1 tsp grated ginger (stock)",
+        "1 tbsp sesame seeds (stock)"
       ],
-      "flavourNote": "The pork should be deeply browned; soy gives savoury depth, honey just enough gloss, and lime keeps the sauce bright rather than cloying.",
-      "storageNote": "Cool two complete portions quickly and refrigerate; reheat thoroughly on Friday.",
+      "flavourNote": "Keep the sauce glossy and savoury; rice vinegar and ginger stop the teriyaki becoming overly sweet.",
+      "storageNote": "Cool rice rapidly and refrigerate promptly. Reheat rice/salmon thoroughly; keep cucumber separate if preferred.",
       "arrangeForLunch": {
         "enabled": true,
         "portions": 2,
-        "for": "2026-09-25",
-        "label": "2 complete adult portions for Friday lunch",
-        "instructions": "Reserve complete portions containing pork, noodles, pak choi, pepper and spring onion."
+        "for": "2026-10-02",
+        "label": "Friday work lunches",
+        "instructions": "Pack 2 identical complete salmon rice bowls; do not add or transform components for lunch."
       }
     },
-    "fri-lunch-sticky-pork-noodles": {
-      "id": "fri-lunch-sticky-pork-noodles",
-      "date": "2026-09-25",
-      "title": "Sticky ginger pork & vegetable noodles with pak choi, red pepper and spring onion",
-      "cuisine": "East Asian-inspired",
+    "fri-lunch": {
+      "id": "fri-lunch",
+      "date": "2026-10-02",
+      "title": "Teriyaki salmon rice bowls with cucumber, edamame & sesame",
       "slotLabel": "Lunch",
       "mealMode": "planned_leftover",
       "portions": {
-        "adultServings": 2,
-        "childServings": 0,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch"
-        ]
+        "total": 2,
+        "allocation": "Marcus + Bron work lunches"
       },
       "method": [
-        "Reheat the complete pork noodle portions until piping hot."
+        "Reheat the prepared complete portions safely until piping hot; serve with their cucumber component."
       ],
-      "storageNote": "Prepared deliberately Thursday night and chilled promptly.",
-      "sourceMealId": "thu-dinner-sticky-pork-noodles",
+      "sourceMealId": "thu-dinner",
       "arrangedFromPreviousMeal": {
-        "sourceMealId": "thu-dinner-sticky-pork-noodles",
-        "label": "Exact complete meal prepared from previous dinner"
+        "sourceMealId": "thu-dinner",
+        "label": "Identical complete portion from previous dinner"
       }
     },
-    "fri-dinner-ginger-coconut-chicken": {
-      "id": "fri-dinner-ginger-coconut-chicken",
-      "date": "2026-09-25",
-      "title": "Ginger coconut chicken curry with broccoli, red pepper & rice",
-      "cuisine": "Thai-inspired",
+    "fri-dinner": {
+      "id": "fri-dinner",
+      "date": "2026-10-02",
+      "title": "Slow-cooker chicken shawarma with flatbreads, chopped salad & tahini-lemon sauce",
       "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 2,
-        "childServings": 1,
-        "allocation": [
-          "Marcus Friday dinner",
-          "Bron Friday dinner",
-          "Barney Friday dinner"
-        ]
+        "totalAdultEquivalent": 4.5,
+        "allocation": "Marcus + Bron + Barney dinner; 2 complete adult portions for Saturday lunch"
       },
       "method": [
-        "Cook the rice.",
-        "Soften the onion, ginger and garlic, then add 1 tbsp curry paste and cook for 1 minute.",
-        "Add chicken, coconut milk, broccoli and red pepper. Simmer gently until the chicken is cooked and vegetables are tender.",
-        "Remove Barney's portion before increasing the adults' sauce with the remaining 2 tbsp curry paste and soy sauce.",
-        "Finish the adult curry with lime juice and serve with rice."
+        "Coat chicken with spices, garlic and oil; slow cook LOW 5–6 hours or HIGH 3–4 hours.",
+        "Shred or slice chicken and, if possible, crisp briefly under a hot grill.",
+        "Mix tahini with lemon juice and enough water for a pourable sauce.",
+        "Chop salad and warm flatbreads.",
+        "Assemble dinner and pack two complete lunch portions with the same chicken, breads, salad and sauce."
       ],
+      "cuisine": "Middle Eastern",
       "ingredients": [
-        {
-          "item": "Chicken breast",
-          "quantity": 300,
-          "unit": "g"
-        },
-        {
-          "item": "Dry rice",
-          "quantity": 200,
-          "unit": "g"
-        },
-        {
-          "item": "Broccoli",
-          "quantity": 300,
-          "unit": "g"
-        },
-        {
-          "item": "Red pepper",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Brown onion",
-          "quantity": 1,
-          "unit": "each"
-        },
-        {
-          "item": "Fresh ginger",
-          "quantity": 20,
-          "unit": "g"
-        },
-        {
-          "item": "Garlic",
-          "quantity": 3,
-          "unit": "cloves"
-        },
-        {
-          "item": "Coconut milk",
-          "quantity": 1,
-          "unit": "400ml tin"
-        },
-        {
-          "item": "Thai red curry paste",
-          "quantity": 3,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Soy sauce",
-          "quantity": 1,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Lime",
-          "quantity": 1,
-          "unit": "each"
-        }
+        "1kg boneless skinless chicken thighs",
+        "8 flatbreads",
+        "1 cucumber",
+        "4 tomatoes",
+        "1 lettuce",
+        "1 red onion",
+        "80g tahini (stock)",
+        "1 lemon",
+        "3 garlic cloves",
+        "2 tsp ground cumin",
+        "2 tsp ground coriander",
+        "2 tsp paprika",
+        "1/2 tsp turmeric",
+        "1/2 tsp cinnamon",
+        "1 tbsp olive oil"
       ],
-      "flavourNote": "Frying the curry paste first and finishing with soy and lime gives the sauce depth, salt and acidity so it does not taste flat.",
-      "barneyNote": "His portion is removed before the extra curry paste and soy; cut chicken and broccoli appropriately and serve with plenty of rice.",
-      "storageNote": "Refrigerate any unserved food within 2 hours."
+      "flavourNote": "Cumin, coriander, paprika, garlic and lemon should be assertive; crisping the cooked chicken adds important texture.",
+      "barneyNote": "Set aside lightly seasoned tender chicken for Barney; serve deconstructed with suitable pieces.",
+      "storageNote": "Refrigerate chicken, salad and sauce separately but together as complete allocated lunch meals.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": "2026-10-03",
+        "label": "Saturday lunch",
+        "instructions": "Reserve two complete identical shawarma meals: chicken, flatbreads, salad and tahini-lemon sauce."
+      }
     },
-    "sun-lunch-jacket-beans-cheddar": {
-      "id": "sun-lunch-jacket-beans-cheddar",
-      "date": "2026-09-27",
-      "title": "Jacket potatoes with baked beans and mature cheddar",
+    "sat-lunch": {
+      "id": "sat-lunch",
+      "date": "2026-10-03",
+      "title": "Slow-cooker chicken shawarma with flatbreads, chopped salad & tahini-lemon sauce",
+      "slotLabel": "Lunch",
+      "mealMode": "planned_leftover",
+      "portions": {
+        "total": 2,
+        "allocation": "Marcus + Bron"
+      },
+      "method": [
+        "Reheat chicken thoroughly; serve with the reserved flatbreads, salad and tahini-lemon sauce exactly as Friday dinner."
+      ],
+      "sourceMealId": "fri-dinner",
+      "arrangedFromPreviousMeal": {
+        "sourceMealId": "fri-dinner",
+        "label": "Identical complete portion from previous dinner"
+      }
+    },
+    "sat-dinner": {
+      "id": "sat-dinner",
+      "date": "2026-10-03",
+      "title": "Beef burgers with seasoned potato wedges, slaw & corn",
+      "slotLabel": "Dinner",
+      "mealMode": "cook",
+      "portions": {
+        "total": 3,
+        "allocation": "Marcus + Bron + Barney"
+      },
+      "method": [
+        "Cut potatoes into wedges, season with paprika, oil, salt and pepper and roast until crisp.",
+        "Shape mince into three burgers without overworking; season just before cooking.",
+        "Cook burgers through as appropriate for the family and toast buns.",
+        "Cook corn and serve with slaw and mustard."
+      ],
       "cuisine": "Comfort",
+      "ingredients": [
+        "500g beef mince",
+        "3 burger buns",
+        "900g potatoes",
+        "300g slaw mix",
+        "2 corn cobs",
+        "1 tbsp mustard (stock)",
+        "1 tsp smoked paprika"
+      ],
+      "flavourNote": "Good browning on the burgers and crisp wedges matter more than extra sauces.",
+      "barneyNote": "Cook Barney's burger fully; serve a smaller portion and cut safely."
+    },
+    "sun-lunch": {
+      "id": "sun-lunch",
+      "date": "2026-10-04",
+      "title": "Kimchi sesame egg fried rice",
       "slotLabel": "Lunch",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 2,
-        "childServings": 1,
-        "allocation": [
-          "Marcus lunch",
-          "Bron lunch",
-          "Barney lunch"
-        ]
+        "total": 3,
+        "allocation": "Marcus + Bron + Barney"
       },
-      "ingredients": [
-        {
-          "item": "Jacket potatoes",
-          "quantity": 3,
-          "unit": "each (2 large, 1 small; about 750 g total)"
-        },
-        {
-          "item": "Baked beans",
-          "quantity": 1,
-          "unit": "400 g tin"
-        },
-        {
-          "item": "Mature cheddar",
-          "quantity": 120,
-          "unit": "g"
-        }
-      ],
       "method": [
-        "Prick potatoes and bake at 200°C fan for 55–75 minutes, until soft inside and crisp outside; the smaller potato may finish first.",
-        "Heat the entire tin of beans thoroughly. Split potatoes, spoon over beans and top with 120 g grated cheddar."
+        "Cook rice ahead and cool, or use freshly cooked rice allowed to steam dry.",
+        "Stir-fry kimchi and spring onion, add rice and peas, then push aside and scramble eggs.",
+        "Combine with soy and sesame oil; finish with sesame seeds."
       ],
-      "flavourNote": "Season the adults' potatoes to taste; the mature cheddar adds savoury depth.",
-      "barneyNote": "Serve the small potato, beans and a modest share of the cheese at a safe temperature; cut to manageable pieces. Avoid added salt.",
-      "storageNote": "Refrigerate any uneaten cooked potato or beans promptly; the planned meal uses the full tin."
+      "cuisine": "Korean-inspired",
+      "ingredients": [
+        "250g dry rice",
+        "4 eggs",
+        "150g kimchi (stock)",
+        "150g frozen peas",
+        "3 spring onions",
+        "1 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tbsp sesame seeds (stock)"
+      ],
+      "flavourNote": "Use kimchi for acidity and heat, sesame for nuttiness and soy for savoury depth.",
+      "barneyNote": "For Barney, make a mild portion before adding much kimchi/soy."
     },
-    "sun-dinner-roast-chicken": {
-      "id": "sun-dinner-roast-chicken",
-      "date": "2026-09-27",
-      "title": "Roast chicken with potatoes, honey parsnips, carrot and swede mash, broccoli and gravy",
-      "cuisine": "British roast",
+    "sun-dinner": {
+      "id": "sun-dinner",
+      "date": "2026-10-04",
+      "title": "Roast pork loin with roast potatoes, carrots, greens, gravy & mustard",
       "slotLabel": "Dinner",
       "mealMode": "cook",
       "portions": {
-        "adultServings": 2,
-        "childServings": 1,
-        "allocation": [
-          "Marcus dinner",
-          "Bron dinner",
-          "Barney dinner; chicken remaining from whole bird is intentional"
-        ]
+        "totalAdultEquivalent": 4.5,
+        "allocation": "Marcus + Bron + Barney dinner; 2 complete adult portions for Monday lunch"
       },
-      "ingredients": [
-        {
-          "item": "Whole chicken",
-          "quantity": 1,
-          "unit": "1.6–1.8 kg bird"
-        },
-        {
-          "item": "Roast potatoes",
-          "quantity": 750,
-          "unit": "g (confirmed already have)"
-        },
-        {
-          "item": "Parsnips",
-          "quantity": 500,
-          "unit": "g"
-        },
-        {
-          "item": "Carrots",
-          "quantity": 500,
-          "unit": "g"
-        },
-        {
-          "item": "Swede/turnip",
-          "quantity": 500,
-          "unit": "g"
-        },
-        {
-          "item": "Broccoli",
-          "quantity": 400,
-          "unit": "g"
-        },
-        {
-          "item": "Honey",
-          "quantity": 2,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Oil",
-          "quantity": 3,
-          "unit": "tbsp"
-        },
-        {
-          "item": "Butter",
-          "quantity": 30,
-          "unit": "g"
-        },
-        {
-          "item": "Gravy granules",
-          "quantity": 30,
-          "unit": "g (use enough for about 300 ml gravy)"
-        },
-        {
-          "item": "Salt and black pepper",
-          "quantity": 1,
-          "unit": "to taste"
-        }
-      ],
       "method": [
-        "Heat oven to 200°C fan. Pat chicken dry, rub with 1 tbsp oil and season the skin. Roast according to the bird's pack instructions until thoroughly cooked (75°C in the thickest part, away from bone); rest 15–20 minutes before carving.",
-        "Parboil 750 g potatoes for 8–10 minutes, drain and rough up. Roast in 1 tbsp oil until golden and crisp, usually 45–55 minutes.",
-        "Peel and cut 500 g parsnips into even batons. Toss with 1 tbsp oil; roast 30–40 minutes. Toss with 2 tbsp honey for the final 8–10 minutes so the glaze caramelises without burning.",
-        "Peel and dice 500 g carrots and 500 g swede. Boil until tender, drain well and mash with 30 g butter; season the adults' servings after taking Barney's.",
-        "Steam 400 g broccoli until just tender. Make about 300 ml gravy with the granules, following the pack dilution. Carve the chicken and serve each plate with all sides and gravy."
+        "Roast pork according to joint size until safely cooked, then rest well.",
+        "Roast potatoes until deeply crisp and roast/steam carrots and greens.",
+        "Make gravy from roasting juices plus stock/granules.",
+        "Serve with mustard; reserve two complete portions including pork, potatoes, carrots, greens and gravy for Monday."
       ],
-      "flavourNote": "Crisp chicken skin and potatoes balance sweet parsnips and mash; keep broccoli bright and gravy savoury. Use a little chicken roasting juice in adult gravy if desired.",
-      "barneyNote": "Offer boneless, well-cooked chicken and soft vegetables in manageable pieces. Give a smaller portion of honey glaze and low-salt gravy, and season adult plates separately.",
-      "storageNote": "The whole bird exceeds three dinner portions. Cool extra cooked chicken promptly, refrigerate within 2 hours for up to 2 days or freeze; it is an intentional remainder, not a planned lunch."
+      "cuisine": "British",
+      "ingredients": [
+        "1.2kg pork loin joint",
+        "1.2kg potatoes",
+        "600g carrots",
+        "400g green vegetables",
+        "gravy granules (stock)",
+        "mustard (stock)",
+        "1 tbsp olive oil"
+      ],
+      "flavourNote": "Rest the pork properly and use roasting juices in the gravy; mustard supplies acidity and heat.",
+      "barneyNote": "Serve tender pork in age-appropriate pieces and keep salt modest.",
+      "storageNote": "Cool two complete Monday lunch portions promptly and refrigerate.",
+      "arrangeForLunch": {
+        "enabled": true,
+        "portions": 2,
+        "for": null,
+        "label": "Monday lunch (next week)",
+        "instructions": "Pack 2 identical complete roast portions with pork, potatoes, carrots, greens and gravy."
+      }
     }
   },
-  "openingStock": [
-    "Roast potatoes: about 750 g confirmed for Sunday",
-    "Gravy granules: confirmed in previous stock check; use about 30 g if still available"
-  ],
-  "intentionalRemainders": [
-    "About 130 g cheddar remains from the 250 g block; refrigerate.",
-    "Extra cooked chicken remains from a 1.6–1.8 kg whole bird; refrigerate promptly for up to two days or freeze.",
-    "If jacket potatoes or swede are bought in a larger pack, retain any excess as household stock.",
-    "Any honey, butter or oil bought because home stock is low remains household stock."
-  ],
-  "usefulNotes": [
-    "Sunday's shopping list is for today's two meals only; earlier meals and their purchases are historical.",
-    "Roast potatoes are confirmed as already available. Check remaining gravy granules before cooking.",
-    "Honey, butter, oil and seasoning are conditional purchases; check home stock before shopping."
-  ],
   "shoppingList": [
     {
-      "category": "Meat",
-      "item": "Whole chicken",
-      "quantity": "1 bird, 1.6–1.8 kg",
-      "note": "Roast dinner; extra cooked chicken intentionally refrigerated or frozen."
+      "category": "Meat & fish",
+      "item": "Boneless chicken for Monday",
+      "purchase": "900g",
+      "use": "Monday dinner + Tuesday lunch"
     },
     {
-      "category": "Fruit & veg",
-      "item": "Jacket potatoes",
-      "quantity": "2 large + 1 small (about 750 g total; buy loose or nearest pack)",
-      "note": "Sunday lunch. Any extra pack potatoes remain cupboard stock."
+      "category": "Meat & fish",
+      "item": "Diced beef chuck",
+      "purchase": "1kg",
+      "use": "Tuesday tagine + Wednesday lunch"
     },
     {
-      "category": "Cupboard",
-      "item": "Baked beans",
-      "quantity": "1 × 400 g tin",
-      "note": "Use whole tin at lunch."
+      "category": "Meat & fish",
+      "item": "Pork sausages",
+      "purchase": "750g pack(s)",
+      "use": "Wednesday dinner + Thursday lunch"
     },
     {
-      "category": "Dairy",
-      "item": "Mature cheddar",
-      "quantity": "1 × 250 g block",
-      "note": "Use 120 g at lunch; refrigerate remaining about 130 g."
+      "category": "Meat & fish",
+      "item": "Salmon fillets",
+      "purchase": "650-700g total (e.g. 4 large fillets or 5 smaller)",
+      "use": "Thursday dinner + Friday lunch"
     },
     {
-      "category": "Fruit & veg",
-      "item": "Parsnips",
-      "quantity": "about 500 g",
-      "note": "Use all at dinner."
+      "category": "Meat & fish",
+      "item": "Boneless skinless chicken thighs",
+      "purchase": "1kg",
+      "use": "Friday shawarma + Saturday lunch"
     },
     {
-      "category": "Fruit & veg",
+      "category": "Meat & fish",
+      "item": "Beef mince",
+      "purchase": "500g",
+      "use": "Saturday burgers"
+    },
+    {
+      "category": "Meat & fish",
+      "item": "Pork loin joint",
+      "purchase": "1.2kg",
+      "use": "Sunday dinner + 2 Monday lunch portions"
+    },
+    {
+      "category": "Produce",
+      "item": "Baking/roasting potatoes",
+      "purchase": "3kg bag",
+      "use": "Monday lunch, Saturday wedges, Sunday roast; small remainder intentional"
+    },
+    {
+      "category": "Produce",
+      "item": "Onions",
+      "purchase": "3-pack",
+      "use": "Tuesday tagine, Wednesday pasta; stock red onion used Friday"
+    },
+    {
+      "category": "Produce",
+      "item": "Spinach",
+      "purchase": "200g bag",
+      "use": "Wednesday pasta"
+    },
+    {
+      "category": "Produce",
+      "item": "Cucumber",
+      "purchase": "2",
+      "use": "Thursday bowls and Friday shawarma"
+    },
+    {
+      "category": "Produce",
+      "item": "Spring onions",
+      "purchase": "2 bunches",
+      "use": "Thursday bowls and Sunday lunch"
+    },
+    {
+      "category": "Produce",
+      "item": "Tomatoes",
+      "purchase": "6 medium",
+      "use": "Friday shawarma; stock baby tomatoes Monday lunch"
+    },
+    {
+      "category": "Produce",
+      "item": "Lettuce",
+      "purchase": "1",
+      "use": "Friday shawarma; stock half lettuce Monday lunch"
+    },
+    {
+      "category": "Produce",
       "item": "Carrots",
-      "quantity": "about 500 g",
-      "note": "Use all at dinner."
+      "purchase": "1kg bag",
+      "use": "Sunday roast; remainder intentional"
     },
     {
-      "category": "Fruit & veg",
-      "item": "Swede/turnip",
-      "quantity": "1 small, about 500 g usable",
-      "note": "Use in mash; any excess from a larger swede can be refrigerated."
+      "category": "Produce",
+      "item": "Green vegetables",
+      "purchase": "400g",
+      "use": "Sunday roast"
     },
     {
-      "category": "Fruit & veg",
-      "item": "Broccoli",
-      "quantity": "1 large head, about 400 g",
-      "note": "Use at dinner."
+      "category": "Produce",
+      "item": "Corn on the cob",
+      "purchase": "2",
+      "use": "Saturday dinner"
+    },
+    {
+      "category": "Produce",
+      "item": "Fruit for Barney",
+      "purchase": "1 week's suitable selection",
+      "use": "Barney snacks/breakfasts"
+    },
+    {
+      "category": "Frozen",
+      "item": "Shelled edamame",
+      "purchase": "300g",
+      "use": "Thursday dinner + Friday lunch"
+    },
+    {
+      "category": "Frozen",
+      "item": "Frozen peas",
+      "purchase": "500g bag",
+      "use": "Sunday lunch; remainder frozen"
+    },
+    {
+      "category": "Dairy & eggs",
+      "item": "Single cream",
+      "purchase": "300ml pot",
+      "use": "200ml Wednesday pasta; 100ml intentional remainder"
+    },
+    {
+      "category": "Dairy & eggs",
+      "item": "Parmesan",
+      "purchase": "100g",
+      "use": "75g Wednesday pasta; remainder"
+    },
+    {
+      "category": "Dairy & eggs",
+      "item": "Eggs",
+      "purchase": "6",
+      "use": "4 Sunday lunch; 2 remainder"
+    },
+    {
+      "category": "Bakery",
+      "item": "Flatbreads",
+      "purchase": "8",
+      "use": "Friday dinner + Saturday lunch"
+    },
+    {
+      "category": "Bakery",
+      "item": "Burger buns",
+      "purchase": "4-pack",
+      "use": "3 Saturday; 1 freeze"
     },
     {
       "category": "Cupboard",
-      "item": "Honey",
-      "quantity": "1 jar if needed",
-      "note": "Use 2 tbsp for parsnips; check cupboard before buying."
-    },
-    {
-      "category": "Dairy",
-      "item": "Butter",
-      "quantity": "1 pack if needed",
-      "note": "Use 30 g in mash; check fridge before buying."
+      "item": "Rigatoni",
+      "purchase": "500g",
+      "use": "400g Wednesday; 100g remainder"
     },
     {
       "category": "Cupboard",
-      "item": "Oil",
-      "quantity": "1 bottle if needed",
-      "note": "Use 3 tbsp; check cupboard before buying."
+      "item": "Rice",
+      "purchase": "1kg",
+      "use": "550g across Thursday and Sunday; remainder"
     },
     {
-      "category": "Seasoning",
-      "item": "Salt and black pepper",
-      "quantity": "if needed",
-      "note": "Season adults' portions; check cupboard before buying."
+      "category": "Cupboard",
+      "item": "Chopped tomatoes",
+      "purchase": "2 x 400g tins",
+      "use": "Tuesday tagine and Wednesday pasta"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Beef stock cubes",
+      "purchase": "1 pack if needed",
+      "use": "Tuesday tagine"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Teriyaki sauce",
+      "purchase": "1 bottle",
+      "use": "Thursday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Soy sauce",
+      "purchase": "1 bottle if needed",
+      "use": "Thursday and Sunday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Rice vinegar",
+      "purchase": "1 bottle if needed",
+      "use": "Thursday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Sesame oil",
+      "purchase": "1 small bottle if needed",
+      "use": "Sunday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Olive oil",
+      "purchase": "1 bottle if low",
+      "use": "multiple dinners"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Dried oregano",
+      "purchase": "1 jar if needed",
+      "use": "Monday and Wednesday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Ground cumin",
+      "purchase": "1 jar if needed",
+      "use": "Tuesday and Friday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Ground coriander",
+      "purchase": "1 jar if needed",
+      "use": "Tuesday and Friday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Cinnamon",
+      "purchase": "1 jar if needed",
+      "use": "Tuesday and Friday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Smoked paprika/paprika",
+      "purchase": "1 jar if needed",
+      "use": "Tuesday, Friday, Saturday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Turmeric",
+      "purchase": "1 jar if needed",
+      "use": "Friday"
+    },
+    {
+      "category": "Cupboard",
+      "item": "Fennel seeds",
+      "purchase": "1 jar if needed",
+      "use": "Wednesday"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Milk",
+      "purchase": "usual weekly quantity",
+      "use": "Breakfasts/drinks"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Dark chocolate",
+      "purchase": "1 pack",
+      "use": "Snack"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Coffee",
+      "purchase": "usual pack",
+      "use": "Drinks"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Pumpkin seeds",
+      "purchase": "1 pack",
+      "use": "Breakfasts/snacks"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Sunflower seeds",
+      "purchase": "1 pack",
+      "use": "Breakfasts/snacks"
+    },
+    {
+      "category": "Household/usual",
+      "item": "Orange juice",
+      "purchase": "usual pack",
+      "use": "Drinks"
+    },
+    {
+      "category": "Household",
+      "item": "Nappies",
+      "purchase": "1 pack",
+      "use": "Barney"
+    },
+    {
+      "category": "Household",
+      "item": "Method kitchen/worktop spray",
+      "purchase": "1 bottle",
+      "use": "Household"
+    },
+    {
+      "category": "Health",
+      "item": "Paracetamol",
+      "purchase": "1 pack",
+      "use": "Household medicine"
     }
   ],
   "metadata": {
-    "generatedFor": "Weekly Food Plan web app",
-    "generatedAt": "2026-09-27T11:10:01.937409+01:00",
-    "validatedAgainst": "schema/weekly-food-plan.schema.json current GitHub blob 90a6dda19f8ec952b6c48601bd724563ab585c88",
-    "reconciliationNote": "Sunday lunch and dinner quantities include two adults and one child; prior days remain historical and are excluded from today's shopping list."
+    "generatedAt": "2026-09-28",
+    "reconciled": true,
+    "twoSlowCookerMeals": true
   }
 }
