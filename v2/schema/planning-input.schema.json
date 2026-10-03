@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weekly-food-plan-v2-planning-input",
+  "title": "Weekly Food Planner V2 Planning Input",
+  "type": "object",
+  "required": ["week", "household", "openingStock", "constraints"],
+  "properties": {
+    "week": {
+      "type": "object",
+      "required": ["startDate", "endDate", "currency", "budgetTarget"],
+      "properties": {
+        "startDate": {"type": "string", "format": "date"},
+        "endDate": {"type": "string", "format": "date"},
+        "currency": {"const": "GBP"},
+        "budgetTarget": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "household": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "portionProfile"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "portionProfile": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "openingStock": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/stockItem"}
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "mealEvents": {"type": "array", "items": {"type": "object"}},
+        "requests": {"type": "array", "items": {"type": "string"}},
+        "confirmedNeeds": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "stockItem": {
+      "type": "object",
+      "required": ["ingredientId", "name", "quantity", "unit", "priority"],
+      "properties": {
+        "ingredientId": {"type": "string"},
+        "name": {"type": "string"},
+        "quantity": {"type": "number", "minimum": 0},
+        "unit": {"type": "string"},
+        "priority": {"enum": ["use_first", "use_if_sensible", "no_urgency"]},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
