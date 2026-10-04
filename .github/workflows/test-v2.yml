@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - v2-foundation
+      - v2-app
     paths:
       - "v2/**"
       - ".github/workflows/test-v2.yml"
