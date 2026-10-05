@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weekly-food-plan-v2-meal",
+  "title": "Weekly Food Planner V2 Meal",
+  "type": "object",
+  "required": ["id", "date", "title", "mealMode", "allocations"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "format": "date"},
+    "title": {"type": "string", "minLength": 1},
+    "mealMode": {"enum": ["cook", "standalone", "planned_leftover"]},
+    "sourceMealId": {"type": ["string", "null"]},
+    "allocations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["consumerId", "portionFactor", "purpose"],
+        "properties": {
+          "consumerId": {"type": "string", "minLength": 1},
+          "portionFactor": {"type": "number", "exclusiveMinimum": 0},
+          "purpose": {"enum": ["dinner", "lunch", "other"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ingredientId", "name", "quantity", "unit"],
+        "properties": {
+          "ingredientId": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "quantity": {"type": "number", "exclusiveMinimum": 0},
+          "unit": {"enum": ["g", "ml", "each"]},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "method": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "flavourNote": {"type": "string"},
+    "barneyNote": {"type": "string"},
+    "storageNote": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"mealMode": {"enum": ["cook", "standalone"]}}, "required": ["mealMode"]},
+      "then": {
+        "required": ["ingredients", "method"],
+        "properties": {"ingredients": {"minItems": 1}, "method": {"minItems": 1}}
+      }
+    },
+    {
+      "if": {"properties": {"mealMode": {"const": "planned_leftover"}}, "required": ["mealMode"]},
+      "then": {
+        "required": ["sourceMealId"],
+        "properties": {"sourceMealId": {"type": "string", "minLength": 1}, "ingredients": {"maxItems": 0}}
+      }
+    }
+  ],
+  "additionalProperties": false
+}

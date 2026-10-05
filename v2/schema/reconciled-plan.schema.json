@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weekly-food-plan-v2-reconciled-plan",
+  "title": "Weekly Food Planner V2 Reconciled Plan",
+  "type": "object",
+  "required": ["planId", "week", "days", "meals", "ingredientLedger", "shoppingList", "budget", "qa"],
+  "properties": {
+    "planId": {"type": "string"},
+    "week": {"type": "object"},
+    "days": {"type": "array", "minItems": 7, "maxItems": 7},
+    "meals": {"type": "object"},
+    "ingredientLedger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ingredientId", "name", "unit", "openingStock", "recipeUse", "purchaseQuantity", "totalAvailable", "intentionalRemainder", "balanced"],
+        "properties": {
+          "ingredientId": {"type": "string"},
+          "name": {"type": "string"},
+          "unit": {"type": "string"},
+          "openingStock": {"type": "number", "minimum": 0},
+          "recipeUse": {"type": "number", "minimum": 0},
+          "purchaseQuantity": {"type": "number", "minimum": 0},
+          "totalAvailable": {"type": "number", "minimum": 0},
+          "intentionalRemainder": {"type": "number", "minimum": 0},
+          "balanced": {"type": "boolean"},
+          "uses": {"type": "array", "items": {"type": "object"}},
+          "pack": {"type": ["object", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "shoppingList": {"type": "array"},
+    "budget": {
+      "type": "object",
+      "required": ["currency", "target", "forecast", "variance"],
+      "properties": {
+        "currency": {"const": "GBP"},
+        "target": {"type": "number", "minimum": 0},
+        "forecast": {"type": "number", "minimum": 0},
+        "variance": {"type": "number"}
+      },
+      "additionalProperties": false
+    },
+    "qa": {
+      "type": "object",
+      "required": ["publishable", "errors", "warnings"],
+      "properties": {
+        "publishable": {"type": "boolean"},
+        "errors": {"type": "array", "items": {"type": "string"}},
+        "warnings": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
